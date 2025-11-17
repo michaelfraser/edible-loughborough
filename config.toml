@@ -1,0 +1,23 @@
+baseURL = 'https://www.incredibleedibleloughborough.org/'
+languageCode = 'en-gb'
+title = 'Incredible Edible Loughborough'
+disableKinds = ['taxonomy', 'term']
+
+[menu]
+  [[menu.main]]
+    name = 'Home'
+    url = '/'
+    weight = 1
+  [[menu.main]]
+    name = 'About'
+    url = '/about/'
+    weight = 2
+  [[menu.main]]
+    name = 'Events'
+    url = '/events/'
+    weight = 3
+  [[menu.main]]
+    name = 'Documents'
+    url = '/documents/'
+    weight = 4
+  

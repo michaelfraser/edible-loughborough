@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">{{ .Site.Title }}</a>
+            <ul>
+                {{ range .Site.Menus.main }}
+                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.instagram.com/incredible.edible.loughborough/" title="Instagram">
+                <img src="/assets/instagram.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.facebook.com/groups/edibleloughborough/" title="Facebook">
+                <img src="/assets/facebook.png" alt="Facebook" class="social-icon">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
