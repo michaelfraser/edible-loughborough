@@ -4,23 +4,35 @@
     box-sizing: border-box;
 }
 
+/* Site theme variables */
+:root {
+    --site-primary: #2c5f2d;
+    /* map Bootstrap's primary to our site variable so Bootstrap utilities (bg-primary etc.) use it */
+    --bs-primary: var(--site-primary);
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
 }
 
+h2 {
+    color: var(--site-primary);
+    margin-bottom: 1rem;
+}
+
 header {
-    background: #2c5f2d;
     color: white;
     padding: 1rem;
 }
 
 nav {
+    background: var(--site-primary);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
 }
 
@@ -44,12 +56,12 @@ nav a {
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #2c5f2d;
+    color: var(--site-primary);
 }
 
 .cta-button {
     display: inline-block;
-    background: #2c5f2d;
+    background: var(--site-primary);
     color: white;
     padding: 1rem 2rem;
     text-decoration: none;
@@ -57,17 +69,14 @@ nav a {
     margin-top: 2rem;
 }
 
-footer {
-    background: #333;
-    color: white;
-    padding: 2rem;
-    text-align: center;
-}
-
 .social {
+    background: #e8f5e9;
+    color: white;
+    padding: 1rem;
+    text-align: right;
     display: flex;
-    justify-content: center;
-    gap: 2rem;
+    justify-content: right;
+    /* gap: 2rem; */
 }
 
 .social a {
@@ -80,7 +89,8 @@ footer {
        using em units so it scales with font-size (responsive) */
     height: 1.2em;
     width: auto;
-    vertical-align: -0.125em; /* nudge to visually center with text */
+    vertical-align: -0.125em;
+    /* nudge to visually center with text */
     margin-right: 0.5em;
     display: inline-block;
 }
