@@ -547,7 +547,7 @@ footer {
 
 
 footer a {
-    color: var(--site-primary);
+    color: white;
     text-decoration: none;
 }
 
@@ -633,4 +633,56 @@ footer .decor-parsnip .leaves {
 .animateme {
     will-change: transform, opacity;
     transition: none; /* No CSS transitions, JS handles it */
+}
+
+.white {
+    color: white !important;
+}
+
+footer a.top .visible {
+    display: none;
+}
+
+footer a.top {
+  -webkit-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  background-color: #8acb5e;
+  background-image: url("/assets/images/arrow_up_white.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.1em;
+  height: 3em;
+  overflow: hidden;
+  position: fixed;
+  text-indent: 3em;
+  white-space: nowrap;
+  width: 3em;
+  z-index: 999;
+  bottom: 3.125%;
+  right: 3.125%;
+}
+@media screen and (max-width: 890px) {
+  footer a.top {
+    bottom: .5em;
+    right: .5em;
+  }
+}
+footer a.top:hover,
+footer a.top:focus,
+footer a.top:active {
+  background-color: #4c7b35;
+}
+
+.has-js footer a.top {
+  bottom: -3em;
+}
+
+footer a.top.visible {
+  bottom: 3.125%;
+}
+@media screen and (max-width: 890px) {
+  footer a.top.visible {
+    bottom: .5em;
+  }
 }
