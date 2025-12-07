@@ -1,9 +1,10 @@
-baseURL = 'https://www.incredibleedibleloughborough.org/'
+baseURL = 'https://edibleloughborough.org.uk/'
 languageCode = 'en-gb'
 title = 'Incredible Edible Loughborough'
 
 [params]
   shortTitle = "IEL"
+  emailAddress = "ediblelboro@gmail.com"
   
 disableKinds = ['taxonomy', 'term']
 ignoreLogs = ['warning-goldmark-raw-html']
@@ -14,15 +15,10 @@ ignoreLogs = ['warning-goldmark-raw-html']
     url = '/'
     weight = 1
   [[menu.main]]
-    name = 'About'
-    url = '/about/'
+    name = 'Our Gardens'
+    url = '/our-gardens/'
     weight = 2
   [[menu.main]]
-    name = 'Events'
-    url = '/events/'
+    name = 'Contact Us'
+    url = '/contact-us/'
     weight = 3
-  [[menu.main]]
-    name = 'Documents'
-    url = '/documents/'
-    weight = 4
-  
