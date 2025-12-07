@@ -8,7 +8,7 @@ draft: false
 
 ## Who we are
 
-This privacy notice is for Incredible Edible Loughborough (‘IEL’, ‘Company’, ‘we’, ‘us’, or ‘our’). Our website address is: {{< baseurl >}}
+This privacy notice is for Incredible Edible Loughborough (‘IEL’, ‘Company’, ‘we’, ‘us’, or ‘our’). Our website address is: {{< baseUrl >}}
 
 This notice lets you know what information we might collect, store and use and what we might do with it when you use our services (‘Services’), such as:
 
@@ -63,7 +63,7 @@ We have implemented appropriate and reasonable technical and organisational secu
 
 ## Do we collect information from minors?
 
-We do not knowingly solicit data from or market to children under 18 years of age. By engaging in our activities, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent’s engagement in activities. If we learn that personal information from users less than 18 years of age has been collected, we will take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18, please contact us at info@edibleloughborough.org.uk
+We do not knowingly solicit data from or market to children under 18 years of age. By engaging in our activities, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent’s engagement in activities. If we learn that personal information from users less than 18 years of age has been collected, we will take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18, please contact us at {{< emailAddress >}}
 
 ## What are your privacy rights?
 
@@ -85,7 +85,7 @@ Please contact us if possible by email or making your request known in writing. 
 
 You can unsubscribe from our promotional communications at any time by clicking on the unsubscribe link in the emails that we send, or by contacting us. You will then be removed from the appropriate lists. However, we may still communicate with you, for example, to send you activity-related messages that are necessary to respond to service requests, or for other non-marketing purposes.
 
-If you have questions or comments about your privacy rights, you may email us at info@edibleloughborough.org.uk
+If you have questions or comments about your privacy rights, you may email us at {{< emailAddress >}}
 
 ## Cookies
 

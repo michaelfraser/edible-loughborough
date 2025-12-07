@@ -4,7 +4,7 @@ title = 'Incredible Edible Loughborough'
 
 [params]
   shortTitle = "IEL"
-  emailAddress = "ediblelboro@gmail.com"
+  contactEmailAddress = "info@edibleloughborough.org.uk"
   
 disableKinds = ['taxonomy', 'term']
 ignoreLogs = ['warning-goldmark-raw-html']
