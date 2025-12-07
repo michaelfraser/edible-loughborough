@@ -9,40 +9,26 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <header>
-        <div class="social">
-            <a href="https://www.instagram.com/incredible.edible.loughborough/" title="Instagram">
-                <img src="/assets/instagram.png" alt="Instagram" class="social-icon">
-            </a>
-            <a href="https://www.facebook.com/groups/edibleloughborough/" title="Facebook">
-                <img src="/assets/facebook.png" alt="Facebook" class="social-icon">
-            </a>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/">{{ .Site.Title }}</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        {{ range .Site.Menus.main }}
-                        <li class="nav-item"><a class="nav-link" href="{{ .URL }}">{{ .Name }}</a></li>
-                        {{ end }}
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    {{ if .IsHome }}
+    {{ partial "header.html" (dict "context" . "menus" .Site.Menus.main "imageTheme" "image-theme" "svgFill" "white"
+    "navbar" "navbar-light" "mainClass" "") }}
+    {{ else }}
+    {{ partial "header.html" (dict "context" . "menus" .Site.Menus.main "imageTheme" "" "svgFill" "rgb(84, 180, 53)"
+    "navbar" "navbar-dark" "mainClass" "internal-main") }}
+    {{ end }}
 
-    <main>
-        {{ block "main" . }}{{ end }}
+    {{ block "main" . }}{{ end }}
     </main>
+    <footer class="text-center py-4">
+        <hr>
+        <a class="no-underline" href="/privacy-policy">Privacy Policy</a> | Copyright &copy; {{ now.Format "2006" }}
+    </footer>
+    <!-- <script src="/js/custom.js"></script> -->
 </body>
 
 </html>
