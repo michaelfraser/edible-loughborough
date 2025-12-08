@@ -3,10 +3,17 @@ languageCode = 'en-gb'
 title = 'Incredible Edible Loughborough'
 disableKinds = ['taxonomy', 'term']
 ignoreLogs = ['warning-goldmark-raw-html']
+enableRobotsTXT = true
+
+[minify]
+  minifyOutput = true
 
 [params]
   shortTitle = "IEL"
   contactEmailAddress = "info@edibleloughborough.org.uk"
+
+[author]
+  name = "Michael Fraser"
 
 [menu]
   [[menu.main]]
