@@ -1,13 +1,12 @@
 baseURL = 'https://edibleloughborough.org.uk/'
 languageCode = 'en-gb'
 title = 'Incredible Edible Loughborough'
+disableKinds = ['taxonomy', 'term']
+ignoreLogs = ['warning-goldmark-raw-html']
 
 [params]
   shortTitle = "IEL"
   contactEmailAddress = "info@edibleloughborough.org.uk"
-  
-disableKinds = ['taxonomy', 'term']
-ignoreLogs = ['warning-goldmark-raw-html']
 
 [menu]
   [[menu.main]]
