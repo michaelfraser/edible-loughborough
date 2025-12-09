@@ -1,0 +1,20 @@
+{{/* Expects a dictionary like: {path: "...", alt: "...", title: "...", class: "...", width: "..."} */}}
+{{ $params := . }}
+
+{{ $imagePath := $params.path }}
+{{ $imageAlt := $params.alt | default (path.Base $imagePath | humanize) }}
+{{ $imageTitle := $params.title | default (path.Base $imagePath | humanize) }}
+{{ $imageClass := $params.class | default "optimized-image" }}
+{{ $imageWidth := $params.width | default "800" }}
+{{ $resizeOption := printf "%sx webp" $imageWidth }}
+
+{{ $imageResource := resources.Get $imagePath }}
+
+{{ with $imageResource }}
+    {{ $optimizedImage := .Resize $resizeOption | resources.Fingerprint "md5" }}
+
+    <img src="{{ $optimizedImage.RelPermalink }}" width="{{ $optimizedImage.Width }}" height="{{ $optimizedImage.Height }}"
+        alt="{{ $imageAlt }}" title="{{ $imageTitle }}" loading="lazy" class="{{ $imageClass }}">
+{{ else }}
+    {{ warnf "Image asset not found at path: %s" $imagePath }}
+{{ end }}

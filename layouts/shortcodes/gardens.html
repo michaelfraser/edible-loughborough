@@ -7,16 +7,24 @@
 {{- $context := dict "garden" $g "index" $index -}}
 <hr>
 {{- if modBool $index 2 }}
-{{/* Odd index: text left, image right */}}
+{{/* Odd index: text left, image right on desktop */}}
 <div class="row align-items-top">
-    {{ partial "gardens-text.html" $context }}
-    {{ partial "gardens-image.html" $context }}    
+    <div class="col-12 col-md-6 order-1 order-md-1">
+        {{ partial "gardens-text.html" $context }}
+    </div>
+    <div class="col-12 col-md-6 order-0 order-md-2">
+        {{ partial "gardens-image.html" $context }}
+    </div>
 </div>
 {{- else }}
-{{/* Even index: image left, text right */}}
-<div class="row align-items-top">
-    {{ partial "gardens-image.html" $context }}    
-    {{ partial "gardens-text.html" $context }}
+{{/* Even index: image left, text right on desktop */}}
+<div class="row align-items-top pb-1">
+    <div class="col-12 col-md-6 order-0 order-md-1">
+        {{ partial "gardens-image.html" $context }}
+    </div>
+    <div class="col-12 col-md-6 order-1 order-md-2">
+        {{ partial "gardens-text.html" $context }}
+    </div>
 </div>
 {{- end }}
 {{- end -}}

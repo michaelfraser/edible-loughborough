@@ -1,6 +1,8 @@
 {{- $g := .garden -}}
 {{- $index := .index -}}
 
-<div class="col-md-6">
-    <img src="{{ $g.image }}" alt="{{ $g.name }}" title="{{ $g.name }}" class="img-fluid w-100">
+<div>
+    {{- $params := dict "path" $g.image "alt" $g.name "title" $g.name "class" "img-fluid w-100" "width" "600" -}}
+    {{ partial "optimizedImage.html" $params }}    
+    <!-- <img src="{{ $g.image }}" alt="{{ $g.name }}" title="{{ $g.name }}" class="img-fluid w-100"> -->
 </div>
