@@ -3,12 +3,6 @@
 @import 'nav';
 @import 'variables';
 
-@media only screen {
-    @-ms-viewport {
-        width: device-width;
-    }
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -21,45 +15,12 @@ body {
     font-family: $font-primary;
     font-size: 1.59vw;
     font-weight: 300;
-    font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
     line-height: 1.5;
     letter-spacing: 0;
+    height: 100%;
 }
-
-@media screen and (min-width: 1260px) {
-
-    html,
-    body {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 890px) {
-
-    html,
-    body {
-        font-size: 14px;
-    }
-}
-
-@media print {
-
-    html,
-    body {
-        font-size: 14px;
-    }
-}
-
-@media projection {
-
-    html,
-    body {
-        font-size: 10px;
-    }
-}
-
 
 header {
     position: absolute;
@@ -69,30 +30,23 @@ header {
     z-index: 1000;
     background: transparent;
     color: white;
-    /* padding: 1rem; */
 }
+
 
 main {
     position: relative;
     z-index: 100;
-    /* Lower than header but above navpic */
-    margin-top: -800px;
-    /* Adjust this value based on how much overlap you want */
-    /* You might want to add padding-top to prevent content from hiding under header */
-    padding-top: 100px;
-    /* Adjust based on your header height */
+    margin-top: -90vh;
 }
 
 main.internal-main {
-    margin-top: 0px;
+    margin-top: 25vh;
 }
-
 
 h2 {
     color: $primary-color;
     margin-bottom: 1rem;
 }
-
 
 svg {
     height: 1.2em;
@@ -121,14 +75,15 @@ a:hover path {
 
 .image-theme {
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/images/home.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), var(--bg-image);
     background-size: cover;
     background-position: top;
     min-height: 100vh;
+    z-index: 1;
 }
 
 .tt {
-    padding-top: 500px;
+    padding-top: 60vh;
 }
 
 .btn-primary {
@@ -171,10 +126,6 @@ h6 {
     }
 }
 
-body {
-    background: white
-}
-
 @media screen {
     body {
         background: #f6f4f0;
@@ -191,5 +142,51 @@ body {
 @media projection {
     body {
         background: white;
+    }
+}
+
+@media only screen {
+    @-ms-viewport {
+        width: device-width;
+    }
+}
+
+@media screen and (min-width: 1260px) {
+
+    html,
+    body {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+
+    html,
+    body {
+        font-size: 14px;
+    }
+
+    .iel-logo {
+        height: 50px;
+    }
+
+    main.internal-main {
+        margin-top: 10vh;
+    }
+}
+
+@media print {
+
+    html,
+    body {
+        font-size: 14px;
+    }
+}
+
+@media projection {
+
+    html,
+    body {
+        font-size: 10px;
     }
 }

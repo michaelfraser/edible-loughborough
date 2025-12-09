@@ -10,15 +10,27 @@ footer {
   position: relative;
   float: left;
   width: 100%;
-  color: white;
-  z-index: 100;
   min-height: 300px;
+  flex-shrink: 0;
+  margin-top: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 100;
 }
-
 
 footer a {
   color: white;
   text-decoration: none;
+}
+
+footer h3 {
+  color: $primary-color !important
+}
+
+footer p {
+  font-size: 12px;
 }
 
 footer [class*='decor-'] .bulb,
@@ -47,12 +59,6 @@ footer .decor-beet {
   width: 4.35em;
 }
 
-@media screen and (max-width: 727px) {
-  footer .decor-beet {
-    left: 60%;
-  }
-}
-
 footer .decor-beet .bulb {
   background-image: url("/assets/images/beet_bulb.png");
   background-size: 2.5em 6.95em;
@@ -79,12 +85,6 @@ footer .decor-parsnip {
   right: 13%;
   top: -5.925em;
   width: 4.35em;
-}
-
-@media screen and (max-width: 727px) {
-  footer .decor-parsnip {
-    display: none;
-  }
 }
 
 footer .decor-parsnip .bulb {
@@ -132,13 +132,6 @@ footer a.top {
   right: 3.125%;
 }
 
-@media screen and (max-width: 890px) {
-  footer a.top {
-    bottom: .5em;
-    right: .5em;
-  }
-}
-
 footer a.top:hover,
 footer a.top:focus,
 footer a.top:active {
@@ -156,5 +149,24 @@ footer a.top.visible {
 @media screen and (max-width: 890px) {
   footer a.top.visible {
     bottom: .5em;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  footer a.top {
+    bottom: .5em;
+    right: .5em;
+  }
+}
+
+@media screen and (max-width: 727px) {
+  footer .decor-beet {
+    left: 60%;
+  }
+}
+
+@media screen and (max-width: 727px) {
+  footer .decor-parsnip {
+    display: none;
   }
 }
