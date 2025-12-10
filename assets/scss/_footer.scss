@@ -4,33 +4,41 @@ footer {
   color: $primary-color;
   text-align: center;
   background-color: #3f3631;
-  margin-top: 2em;
-  padding-bottom: 8em;
-  padding-top: 8em;
-  position: relative;
-  float: left;
   width: 100%;
-  min-height: 300px;
+  min-height: 250px;
   flex-shrink: 0;
   margin-top: auto;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  z-index: 100;
+  z-index: 1;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  h3 {
+    color: $primary-color;
+  }
+
+  p.copyright {
+    font-size: 12px;
+    margin-bottom: 0.5em;
+  }
 }
 
-footer a {
-  color: white;
-  text-decoration: none;
-}
-
-footer h3 {
-  color: $primary-color !important
-}
-
-footer p {
-  font-size: 12px;
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 2em;
+  width: 5.4em;
+  height: 2.2em;
+  background-color: #3f3631;
+  z-index: 3;
+  pointer-events: none;
 }
 
 footer [class*='decor-'] .bulb,
@@ -48,7 +56,7 @@ footer .decor-fork {
   position: absolute;
   top: -11.5em;
   width: 5.4em;
-  z-index: -1;
+  z-index: 2;
 }
 
 footer .decor-beet {
@@ -57,6 +65,7 @@ footer .decor-beet {
   position: absolute;
   top: -3.8em;
   width: 4.35em;
+  z-index: 4;
 }
 
 footer .decor-beet .bulb {
@@ -85,6 +94,7 @@ footer .decor-parsnip {
   right: 13%;
   top: -5.925em;
   width: 4.35em;
+  z-index: 4;
 }
 
 footer .decor-parsnip .bulb {
@@ -108,65 +118,22 @@ footer .decor-parsnip .leaves {
   image-rendering: pixelated;
 }
 
-footer a.top .visible {
-  display: none;
-}
-
-footer a.top {
-  -webkit-transition: all 0.25s ease;
-  -ms-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-  background-color: $primary-color;
-  background-image: url("/assets/images/arrow_up_white.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 1.1em;
-  height: 3em;
-  overflow: hidden;
-  position: fixed;
-  text-indent: 3em;
-  white-space: nowrap;
-  width: 3em;
-  z-index: 999;
-  bottom: 3.125%;
-  right: 3.125%;
-}
-
-footer a.top:hover,
-footer a.top:focus,
-footer a.top:active {
-  background-color: $primary-color;
-}
-
-.has-js footer a.top {
-  bottom: -3em;
-}
-
-footer a.top.visible {
-  bottom: 3.125%;
-}
-
-@media screen and (max-width: 890px) {
-  footer a.top.visible {
-    bottom: .5em;
-  }
-}
-
-@media screen and (max-width: 890px) {
-  footer a.top {
-    bottom: .5em;
-    right: .5em;
-  }
-}
-
 @media screen and (max-width: 727px) {
+
   footer .decor-beet {
     left: 60%;
   }
-}
 
-@media screen and (max-width: 727px) {
   footer .decor-parsnip {
     display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  footer p.copyright {
+    width: 80%;
+    text-align: left;
+    padding-left: 0.5em;
   }
 }

@@ -1,0 +1,49 @@
+@import 'variables';
+
+a.top .visible {
+  display: none;
+}
+
+a.top {
+  transition: background-color 0.25s ease, bottom 0.25s ease;
+  background-color: $primary-color;
+  background-image: url("/assets/images/arrow_up_white.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.1em;
+  height: 3em;
+  overflow: hidden;
+  position: fixed;
+  text-indent: 3em;
+  white-space: nowrap;
+  width: 3em;
+  z-index: 99999;
+  bottom: 1em;
+  right: 1em;
+}
+
+a.top:hover,
+a.top:focus,
+a.top:active {
+  background-color: $primary-color;
+}
+
+.has-js a.top {
+  bottom: -5em;
+}
+
+ a.top.visible {
+  bottom: 3.125%;
+}
+
+
+@media screen and (max-width: 890px) {
+  a.top.visible {
+    bottom: .5em;
+  }
+
+  a.top {
+    bottom: .5em;
+    right: .5em;
+  }
+}

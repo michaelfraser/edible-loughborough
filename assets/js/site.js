@@ -1,7 +1,11 @@
 (function() {
   document.documentElement.classList.add('has-js');
-  const topButton = document.querySelector('footer a.top');
-  const scrollThreshold = 300; // Show button after scrolling 300px down
+  const topButton = document.querySelector('a.top');
+  if (!topButton) {
+    console.error('Back to top button not found');
+    return;
+  }
+  const scrollThreshold = 400; // Show button after scrolling 400px down
   
   function updateButtonVisibility() {
     const scrolled = window.scrollY;

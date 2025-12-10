@@ -2,6 +2,7 @@
 @import 'fonts';
 @import 'nav';
 @import 'variables';
+@import 'top';
 
 * {
     margin: 0;
@@ -40,7 +41,7 @@ main {
 }
 
 main section:last-child {
-    padding: 3rem 1rem;
+    padding: 3rem 1rem; /* Add generous padding */
 }
 
 .tt {
