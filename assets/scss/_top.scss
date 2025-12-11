@@ -37,7 +37,7 @@ a.top:active {
 }
 
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: $lg) {
   a.top.visible {
     bottom: .5em;
   }
