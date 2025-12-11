@@ -1,121 +1,100 @@
 @import 'variables';
+@import 'fonts';
 
-.navbar-dark {
-    background: $primary-color;
-    color: white;
+:root {
+    --nav-underline-offset: 0.5em;
+    --nav-underline-thickness: 3px;
+    --nav-transition-speed: 0.2s;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* max-width: 1200px; */
-    margin: 0 auto;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
     text-transform: uppercase;
     font-family: $font-secondary;
+
+    a {
+        color: $light-color !important;
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 1.25rem;
+        transition: text-decoration var(--nav-transition-speed) ease-in-out;
+
+        &:hover {
+            text-decoration: underline;
+            text-decoration-thickness: var(--nav-underline-thickness);
+            text-decoration-color: currentColor;
+            text-underline-offset: var(--nav-underline-offset);
+        }
+    }
+
+    .active {
+        text-decoration: underline;
+        text-decoration-thickness: var(--nav-underline-thickness);
+        text-decoration-color: currentColor;
+        text-underline-offset: var(--nav-underline-offset);
+    }
 }
 
-nav li .active {
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-decoration-color: currentColor;
-    text-underline-offset: 0.5em;
+.navbar-dark {
+    background: $primary-color;
+    color: $light-color;
 }
 
-.nav-link {
-    color: white;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 300;
-    font-size: 20px;
-}
-
-nav a:hover {
-    text-decoration: underline;
-
-    /* Set the thickness of the underline */
-    text-decoration-thickness: 3px;
-
-    /* Optional: Set a specific color */
-    text-decoration-color: currentColor;
-    text-underline-offset: 0.5em;
-    /* Increase this value for more space */
-
-    /* Optional: Smooth transition for effect */
-    transition: text-underline-offset 0.2s ease-in-out,
-        text-decoration-color 0.2s ease-in-out;
-}
-
-
-.navbar-collapse .nav-link {
-    color: white !important;
-}
-
-/* Make the navbar toggler icon white */
 .navbar-toggler {
-    border-color: white;
-    /* Optional: white border */
+    border-color: $light-color;
+
+    &:focus,
+    &:active {
+        border-color: $light-color;
+        box-shadow: none;
+        outline: none;
+    }
 }
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/* Optional: Change focus/hover state */
-.navbar-toggler:focus,
-.navbar-toggler:active {
-    border-color: white;
-    box-shadow: none;
-    /* Remove default Bootstrap focus shadow */
+
+@media (min-width: $lg) {
+    .navbar-nav {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+    }
 }
 
-/* Position the close button in the top right of the menu */
-.navbar-collapse {
-    position: relative;
-}
-
-.btn-close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    z-index: 1001;
-}
-
-
-@media (max-width: 991.98px) {
+@media (max-width: $lg) {
     .navbar-collapse {
         position: fixed;
         top: 0;
         right: 0;
-        width: auto;
-        min-width: 250px;
-        max-width: 80vw;
+        width: clamp(250px, 80vw, 400px);
         height: 100vh;
-        margin-top: 0;
         padding: 3rem 2rem;
         background-color: $primary-color !important;
-        box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1);
-        z-index: 1050;
+        box-shadow: -4px 0 12px rgba(0, 0, 0, 0.2);
         overflow-y: auto;
         transform: translateX(100%); // Start off-screen to the right
         transition: transform 0.3s ease-in-out;
+        z-index: 1050;
+
+        &.show {
+            transform: translateX(0); // Slide in from right
+        }
     }
-    
-    .navbar-collapse.show {
-        transform: translateX(0); // Slide in from right
-    }
-    
-    nav ul {
+
+    .navbar-nav {
         flex-direction: column;
         gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .btn-close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        filter: brightness(0) invert(1);
+        z-index: 1051;
+        opacity: 1;
     }
 }
