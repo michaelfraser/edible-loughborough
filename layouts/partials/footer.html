@@ -1,20 +1,22 @@
 <footer>
-    <div class="decor-fork animateme" data-when="enter" data-from="1" data-to="0" data-rotatez="5" data-translatex="-50"
-        data-translatey="-50"></div>
+    {{ if .showVegetableImages }}
+        <div class="decor-fork animateme" data-when="enter" data-from="1" data-to="0" data-rotatez="5" data-translatex="-50"
+            data-translatey="-50"></div>
 
-    <div class="decor-beet">
-        <div class="leaves animateme" data-when="enter" data-from="1" data-to="0" data-translatey="10" data-scale=".75">
+        <div class="decor-beet">
+            <div class="leaves animateme" data-when="enter" data-from="1" data-to="0" data-translatey="10" data-scale=".75">
+            </div>
+            <div class="bulb animateme" data-when="enter" data-from="1" data-to="0" data-translatey="-25" data-scale=".5">
+            </div>
         </div>
-        <div class="bulb animateme" data-when="enter" data-from="1" data-to="0" data-translatey="-25" data-scale=".5">
-        </div>
-    </div>
 
-    <div class="decor-parsnip">
-        <div class="leaves animateme" data-when="enter" data-from="1" data-to="0" data-translatey="10" data-scale=".85">
+        <div class="decor-parsnip">
+            <div class="leaves animateme" data-when="enter" data-from="1" data-to="0" data-translatey="10" data-scale=".85">
+            </div>
+            <div class="bulb animateme" data-when="enter" data-from="1" data-to="0" data-translatey="-25" data-scale=".5">
+            </div>
         </div>
-        <div class="bulb animateme" data-when="enter" data-from="1" data-to="0" data-translatey="-25" data-scale=".5">
-        </div>
-    </div>
+    {{ end }}
 
     <div class="container">
         <div class="row">
