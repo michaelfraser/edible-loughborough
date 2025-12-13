@@ -9,7 +9,7 @@ for by Chesterton House Financial Planning. We put it there to deter people from
 squashing the plants!
 """
 map_url = "https://maps.app.goo.gl/rEYqJimwmPqX5sCU9"
-image = "images/gardens/fearon-hall.jpg"
+image = "images/gardens/place-holder.jpg"
 
 [[gardens]]
 name = "Corner Garden"
@@ -33,7 +33,7 @@ description = """
 The IEL garden in front of Knightthorpe Methodist Church has to be seen.  A lovely spot but also amazingly productive of healthy organic food, free to anyone who cares to wander in off the street and thoroughly enjoyed by the gardening group there.
 """
 map_url = "https://maps.app.goo.gl/tuvofNNyucRXtCaFA"
-image = "images/gardens/corner.jpg"
+image = "images/gardens/knightthorpe-church.jpg"
 
 [[gardens]]
 name = "Warwick Way Flats"
@@ -41,7 +41,7 @@ description = """
 At Warwick Way Flats we have two raised beds and a ground level patch of soil. Strawberries, beans, beetroot, peas, courgettes are all likely to be growing there in the summer months.
 """
 map_url = "https://maps.app.goo.gl/TvaPDbimR4KWaiS98"
-image = "images/gardens/corner.jpg"
+image = "images/gardens/warwick-way-flats.jpg"
 
 [[gardens]]
 name = "Thorpe Acre Road"
@@ -50,3 +50,11 @@ Our small garden in Thorpe Acre Road is well known by the locals, who often stop
 """
 map_url = "https://maps.app.goo.gl/XxHkGdCPUKadefuY8"
 image = "images/gardens/thorpe-acre.jpg"
+
+[[gardens]]
+name = "King George Road Allotment"
+description = """
+TBC
+"""
+map_url = "https://maps.app.goo.gl/qFBPH3x8S5CkKxVm6"
+image = "images/gardens/place-holder.jpg"
