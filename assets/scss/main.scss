@@ -91,19 +91,11 @@ a:hover path {
     fill: $primary-color;
 }
 
-.iel-logo {
+.logo {
     height: 50px;
     width: auto;
     display: inline-block;
     vertical-align: middle;
-}
-
-.iel-logo-mobile {
-    display: block;
-}
-
-.iel-logo-desktop {
-    display: none;
 }
 
 .image-theme {
@@ -145,16 +137,8 @@ a:hover path {
 }
 
 @media (min-width: $lg) {
-    .iel-logo {
+    .logo {
         height: 80px;
-    }
-
-    .iel-logo-mobile {
-        display: none;
-    }
-    
-    .iel-logo-desktop {
-        display: block;
     }
 
     main {
