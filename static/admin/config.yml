@@ -2,9 +2,14 @@ local_backend: true
 
 backend:
   name: git-gateway
+  url: http://localhost:8081/api/v1
   branch: main
+
+publish_mode: editorial_workflow
+
 media_folder: static/img
 public_folder: /img
+
 collections:
   - name: 'events'
     label: 'Events'
