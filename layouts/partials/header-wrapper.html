@@ -1,0 +1,7 @@
+{{ if .IsHome }}
+{{ partial "header.html" (dict "context" . "menus" .Site.Data.menu.main "imageTheme" "image-theme" "svgFill" "white"
+"navbar" "bg-none" "mainClass" "") }}
+{{ else }}
+{{ partial "header.html" (dict "context" . "menus" .Site.Data.menu.main "imageTheme" "" "svgFill" "white"
+"navbar" "navbar-dark" "mainClass" "internal-main") }}
+{{ end }}
