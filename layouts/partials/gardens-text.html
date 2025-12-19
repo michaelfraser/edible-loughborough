@@ -4,6 +4,8 @@
 <div>
     <h2>Garden {{ add $index 1 }}</h2>
     <h3>{{ $g.name }}</h3>
-    <p>{{ $g.description }}</p>
-    <a class="btn btn-secondary w-25" href="{{ $g.map_url }}" target="_blank" role="button">MAP</a>
+    <div>
+        {{ $g.description | markdownify }}
+    </div>
+    <a class="btn btn-secondary w-25" href="{{ $g.map_url | safeURL }}" target="_blank" role="button">MAP</a>
 </div>
