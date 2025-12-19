@@ -1,0 +1,47 @@
+gardens:
+  - name: "Fearon Hall"
+    description: |
+      Fearon Hall is our home, where we have our beautiful greenhouse and sheds; where we have our parties,
+      workshops, gatherings. We use two of the planters facing the Parish Church to grow food. Our gardens radiate
+      out from this centre.
+      We grow on two beds on Rectory Road. One is fronted by a lovely raised bed made by Glebe Workskills and paid
+      for by Chesterton House Financial Planning. We put it there to deter people from driving onto the garden and
+      squashing the plants!
+    map_url: "https://maps.app.goo.gl/rEYqJimwmPqX5sCU9"
+    image: "images/gardens/place-holder.jpg"
+
+  - name: "Corner Garden"
+    description: |
+      The Corner Garden at the bottom of Cambridge St was our first garden.  There are 11 raised beds, the wooden ones were made from re-purposed wood by Glebe Workskills and paid for by Chesterton House Financial Planning.  There is a herb garden, a fruit garden and at most times of the year there will be vegetables to pick.  What a great community to be part of. Many people go there to enjoy the peace and to pick food and they all tell us they love what we have done.  When we started there the soil was dead, not a worm in sight.  Last year our nasturtiums were covered in caterpillars.  Yippee, more butterflies.
+    map_url: "https://maps.app.goo.gl/hBKbPKbTcYzBUDac6"
+    image: "images/gardens/corner.jpg"
+
+  - name: "24 Limehurst Avenue"
+    description: |
+      The front garden of 24 Limehurst Avenue is an IEL garden and plenty of neighbours go there to pick.  Just imagine if every other front garden in Loughborough were the same.  How green and joyful a town this would be.  Instead more and more people are paving over their front gardens.  Where is the wildlife supposed to live?  Let’s share our town with other living creatures.
+    map_url: "https://maps.app.goo.gl/jo5dMXudKdojzKM26"
+    image: "images/gardens/limehurst-avenue.jpg"
+
+  - name: "Knightthorpe Methodist Church"
+    description: |
+      The IEL garden in front of Knightthorpe Methodist Church has to be seen.  A lovely spot but also amazingly productive of healthy organic food, free to anyone who cares to wander in off the street and thoroughly enjoyed by the gardening group there.
+    map_url: "https://maps.app.goo.gl/tuvofNNyucRXtCaFA"
+    image: "images/gardens/knightthorpe-church.jpg"
+
+  - name: "Warwick Way Flats"
+    description: |
+      At Warwick Way Flats we have two raised beds and a ground level patch of soil. Strawberries, beans, beetroot, peas, courgettes are all likely to be growing there in the summer months.
+    map_url: "https://maps.app.goo.gl/TvaPDbimR4KWaiS98"
+    image: "images/gardens/warwick-way-flats.jpg"
+
+  - name: "Thorpe Acre Road"
+    description: |
+      Our small garden in Thorpe Acre Road is well known by the locals, who often stop and talk when we are gardening there.  And across the road from it there is another private front garden turned into a public source of organic produce.
+    map_url: "https://maps.app.goo.gl/XxHkGdCPUKadefuY8"
+    image: "images/gardens/thorpe-acre.jpg"
+
+  - name: "King George Road Allotment"
+    description: |
+      TBC
+    map_url: "https://maps.app.goo.gl/qFBPH3x8S5CkKxVm6"
+    image: "images/gardens/place-holder.jpg"
