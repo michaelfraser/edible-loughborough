@@ -32,12 +32,12 @@ collections:
     editor:
       preview: false # Menus usually don't need a live preview
     files:
-      - label: "Navigation"
-        name: "navigation"
+      - label: "Maintain Menu"
+        name: "menu"
         file: "data/menu.yml"
         fields:
           - label: "Menu Items"
-            name: "main" # Matches the 'main:' key in 'data/menu.yml'
+            name: "main" # Matches the key in 'data/menu.yml'
             widget: "list"
             summary: "{{fields.name}}" # Shows the link name in the list view
             fields:
@@ -45,19 +45,21 @@ collections:
               - { label: "URL", name: "url", widget: "string" }
 
   - name: "garden-configuration"
-    label: "Garden Data"
-    description: "Manage the list of community gardens"
-    files:
-      - name: gardens
-        label: "Gardens List"
-        file: "data/gardens.yml"
-        summary: "{{fields.name}}"
-        fields:
-          - label: "Gardens"
-            name: "main"
-            widget: "list"
-            fields:
-              - { label: "Garden Name", name: "name", widget: "string" }
-              - { label: "Description", name: "description", widget: "markdown" }
-              - { label: "Map URL", name: "map_url", widget: "string" }
-              - { label: "Cover Image", name: "image", widget: "image" }
+    label: "Garden Configuration"
+    folder: "content/gardens"
+    extension: "yml"
+    create: true
+    slug: "{{order}}-{{slug}}"
+    summary: "{{name}}"
+    fields:
+      - {
+          label: "Order Priority",
+          name: "weight",
+          widget: "number",
+          default: 10,
+          help: "Lower numbers show first (e.g., 1, 2, 3)",
+        }
+      - { label: "Garden Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Map URL", name: "map_url", widget: "string" }
+      - { label: "Cover Image", name: "image", widget: "image" }
