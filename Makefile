@@ -14,3 +14,6 @@ netlify-staging: ## Build and deploy to Netlify Staging environment
 
 start: ## start
 	hugo server -D
+
+start-cms: ## start Decap CMS
+	MODE=git npx decap-server
