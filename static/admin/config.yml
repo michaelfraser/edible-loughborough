@@ -8,8 +8,8 @@ backend:
 
 publish_mode: editorial_workflow
 
-media_folder: static/img
-public_folder: /img
+media_folder: /assets/images
+public_folder: /assets/images
 
 collections:
   - name: "events"
@@ -46,20 +46,20 @@ collections:
 
   - name: "garden-configuration"
     label: "Garden Configuration"
-    folder: "content/gardens"
-    extension: "yml"
-    create: true
-    slug: "{{order}}-{{slug}}"
-    summary: "{{name}}"
-    fields:
-      - {
-          label: "Order Priority",
-          name: "weight",
-          widget: "number",
-          default: 10,
-          help: "Lower numbers show first (e.g., 1, 2, 3)",
-        }
-      - { label: "Garden Name", name: "name", widget: "string" }
-      - { label: "Description", name: "description", widget: "markdown" }
-      - { label: "Map URL", name: "map_url", widget: "string" }
-      - { label: "Cover Image", name: "image", widget: "image" }
+    description: "Manage the list of community gardens"
+    files:
+      - name: gardens
+        label: "Maintain Gardens"
+        file: "data/gardens.yml"
+        media_folder: "/assets/images/gardens" 
+        public_folder: "/assets/images/gardens"
+        fields:
+          - label: "Gardens"
+            name: "gardens"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Garden Name", name: "name", widget: "string" }
+              - { label: "Description", name: "description", widget: "markdown" }
+              - { label: "Map URL", name: "map_url", widget: "string" }
+              - { label: "Cover Image", name: "image", widget: "image" }
