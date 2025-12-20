@@ -13,6 +13,7 @@
     window.CMS_MANUAL_INIT = true;
   </script>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-  <script type="module" src="config.js"></script>
+  {{ $script := resources.Get "admin/config.js" | js.Build (dict "minify" true) | fingerprint }}
+  <script type="module" src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
 </body>
 </html>
