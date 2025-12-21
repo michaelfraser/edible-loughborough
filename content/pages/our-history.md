@@ -1,5 +1,6 @@
 ---
-title: "Our History"
+title: Our History
+slug: our-history
 date: 2025-12-06
 draft: false
 ---
