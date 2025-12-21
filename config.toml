@@ -16,3 +16,6 @@ enableRobotsTXT = true
   breakpointMd = "768px"
   breakpointSm = "576px"
   author.name = "Michael Fraser"
+
+[permalinks]
+  pages = "/:slug/"

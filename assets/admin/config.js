@@ -86,6 +86,27 @@ const gardensCollection = {
     ]
 };
 
+
+const standardFields = [
+    { label: "Title", name: "title", widget: "string" },
+    { label: "URL Slug", name: "slug", widget: "string", hint: "The URL part, e.g., 'about-us'" },
+    { label: "Layout", name: "layout", widget: "hidden", default: "single" },
+    { label: "Publish Date", name: "date", widget: "datetime" },
+    { label: "Draft Status", name: "draft", widget: "boolean", default: false },
+    { label: "Page Content", name: "body", widget: "markdown" }
+];
+
+const pagesCollection = {
+    name: 'pages',
+    label: 'Pages',
+    folder: 'content/pages',
+    create: true,
+    slug: '{{slug}}',
+    extension: 'md',
+    format: 'yaml-frontmatter',
+    fields: standardFields
+};
+
 /**
  * 
  * END OF COLLECTION DEFINITIONS
@@ -96,7 +117,7 @@ const user = window.netlifyIdentity ? window.netlifyIdentity.currentUser() : nul
 const roles = user?.app_metadata?.roles || [];
 const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
 
-const collections = [eventsCollection, gardensCollection];
+const collections = [eventsCollection, gardensCollection, pagesCollection];
 
 if (isLocal || roles.includes('admin')) {
     collections.push(menuCollection);
