@@ -9,66 +9,16 @@
 {{ end }}
 
 {{ define "scripts" }}
-<script>
-    // Wait for page to fully load
-    window.addEventListener('load', function () {
-        // Initialize the map centered on Loughborough
-        const map = L.map('map').setView([52.7684, -1.2047], 13);
 
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-            attribution: '&copy; OpenStreetMap &copy; CARTO',
-            maxZoom: 19,
-            subdomains: 'abcd'
-        }).addTo(map);
+{{ $subset := slice }}
+{{ range .Site.Data.gardens.gardens }}
+    {{ $subset = $subset | append (dict "lat" .lat "lng" .lng "title" .map_title) }}
+{{ end }}
 
-        // Example pins - replace these with your actual locations
-        const locations = [
-            {
-                lat: 52.775517,
-                lng: -1.20373,
-                title: "Fearon Hall",
-            },
-            {
-                lat: 52.776984,
-                lng: -1.206465,
-                title: "Corner Garden, Cambridge Street",
-            },
-            {
-                lat: 52.775761,
-                lng: -1.210581,
-                title: "24 Limehurst Avenue",
-            },
-            {
-                lat: 52.777257,
-                lng: -1.227150,
-                title: "Knightthorpe Methodist Church",
-            },
-            {
-                lat: 52.780561,
-                lng: -1.229540,
-                title: "Warwick Way Flats",
-            },
-            {
-                lat: 52.776742,
-                lng: -1.235281,
-                title: "Thorpe Acre Road",
-            },
-            {
-                lat: 52.765270,
-                lng: -1.191470,
-                title: "King George Road Allotment"
-            }
-        ];
+{{ $jsVars := dict "locations" $subset }}
+{{ $opts := dict "params" $jsVars "minify" true "target" "es2020" }}
 
-        // Add markers to the map
-        locations.forEach(location => {
-            const marker = L.marker([location.lat, location.lng]).addTo(map);
-            marker.bindPopup(`<b>${location.title}</b>`);
-        });
+{{ $mapJS := resources.Get "js/map.js" | js.Build $opts | fingerprint }}
 
-        // Optional: Fit map to show all markers
-        const group = L.featureGroup(locations.map(loc => L.marker([loc.lat, loc.lng])));
-        map.fitBounds(group.getBounds().pad(0.1));
-    });
-</script>
+<script defer src="{{ $mapJS.RelPermalink }}" integrity="{{ $mapJS.Data.Integrity }}"></script>
 {{ end }}
