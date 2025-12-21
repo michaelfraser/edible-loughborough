@@ -1,7 +1,7 @@
 {{/* Expects a dictionary like: {path: "...", alt: "...", title: "...", class: "...", width: "..."} */}}
 {{ $params := . }}
 
-{{ $imagePath := $params.path }}
+{{ $imagePath := print $params.path | replaceRE "^/assets/" "" | replaceRE "^assets/" "" }}
 {{ $imageAlt := $params.alt | default (path.Base $imagePath | humanize) }}
 {{ $imageTitle := $params.title | default (path.Base $imagePath | humanize) }}
 {{ $imageClass := $params.class | default "optimized-image" }}
