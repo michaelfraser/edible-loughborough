@@ -8,8 +8,12 @@ gardens:
 
 
       We grow on two beds on Rectory Road. One is fronted by a lovely raised bed made by Glebe Workskills and paid for by Chesterton House Financial Planning. We put it there to deter people from driving onto the garden and squashing the plants!
-    map_url: https://maps.app.goo.gl/rEYqJimwmPqX5sCU9
     image: /images/gardens/place-holder.jpg
+    google_map_url: https://maps.app.goo.gl/rEYqJimwmPqX5sCU9
+    lat: 52.775517
+    lng: -1.20373
+    map_title: Fearon Hall
+
   - name: Corner Garden
     description: >
       The Corner Garden at the bottom of Cambridge St was our first
@@ -21,43 +25,67 @@ gardens:
       pick food and they all tell us they love what we have done.  When we
       started there the soil was dead, not a worm in sight.  Last year our
       nasturtiums were covered in caterpillars.  Yippee, more butterflies.
-    map_url: https://maps.app.goo.gl/hBKbPKbTcYzBUDac6
     image: /images/gardens/corner.jpg
+    google_map_url: https://maps.app.goo.gl/hBKbPKbTcYzBUDac6
+    lat: 52.776984
+    lng: -1.206465
+    map_title: Corner Garden, Cambridge Street
+
   - name: 24 Limehurst Avenue
     description: >
       The front garden of 24 Limehurst Avenue is an IEL garden and plenty of
       neighbours go there to pick.  Just imagine if every other front garden in
       Loughborough were the same.  How green and joyful a town this would
       be.  Instead more and more people are paving over their front
-      gardens.  Where is the wildlife supposed to live?  Let’s share our town
+      gardens.  Where is the wildlife supposed to live?  Let's share our town
       with other living creatures.
-    map_url: https://maps.app.goo.gl/jo5dMXudKdojzKM26
     image: /images/gardens/limehurst-avenue.jpg
+    google_map_url: https://maps.app.goo.gl/jo5dMXudKdojzKM26
+    lat: 52.775761
+    lng: -1.210581
+    map_title: 24 Limehurst Avenue
+
   - name: Knightthorpe Methodist Church
     description: >
       The IEL garden in front of Knightthorpe Methodist Church has to be
       seen.  A lovely spot but also amazingly productive of healthy organic
       food, free to anyone who cares to wander in off the street and thoroughly
       enjoyed by the gardening group there.
-    map_url: https://maps.app.goo.gl/tuvofNNyucRXtCaFA
     image: /images/gardens/knightthorpe-church.jpg
+    google_map_url: https://maps.app.goo.gl/tuvofNNyucRXtCaFA
+    lat: 52.777257
+    lng: -1.227150
+    map_title: Knightthorpe Methodist Church
+
   - name: Warwick Way Flats
     description: >
       At Warwick Way Flats we have two raised beds and a ground level patch of
       soil. Strawberries, beans, beetroot, peas, courgettes are all likely to be
       growing there in the summer months.
-    map_url: https://maps.app.goo.gl/TvaPDbimR4KWaiS98
     image: /images/gardens/warwick-way-flats.jpg
+    google_map_url: https://maps.app.goo.gl/TvaPDbimR4KWaiS98
+    lat: 52.780561
+    lng: -1.229540
+    map_title: Warwick Way Flats
+
   - name: Thorpe Acre Road
     description: >
       Our small garden in Thorpe Acre Road is well known by the locals, who
       often stop and talk when we are gardening there.  And across the road from
       it there is another private front garden turned into a public source of
       organic produce.
-    map_url: https://maps.app.goo.gl/XxHkGdCPUKadefuY8
     image: /images/gardens/thorpe-acre.jpg
+    google_map_url: https://maps.app.goo.gl/XxHkGdCPUKadefuY8
+    lat: 52.776742
+    lng: -1.235281
+    map_title: Thorpe Acre Road
+
   - name: King George Road Allotment
     description: |
       TBC
-    map_url: https://maps.app.goo.gl/qFBPH3x8S5CkKxVm6
     image: /images/gardens/place-holder.jpg
+    google_map_url: https://maps.app.goo.gl/qFBPH3x8S5CkKxVm6
+    lat: 52.765270
+    lng: -1.191470
+    map_title: King George Road Allotment
+

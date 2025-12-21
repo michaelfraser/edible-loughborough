@@ -72,16 +72,25 @@ const gardensCollection = {
                     widget: "list",
                     summary: "{{fields.name}}",
                     fields: [
-                        { label: "Garden Name", name: "name", widget: "string" },
+                        { label: "Garden name", name: "name", widget: "string" },
                         { label: "Description", name: "description", widget: "markdown" },
-                        { label: "Map URL", name: "map_url", widget: "string" },
-                        { label: "Cover Image", name: "image", widget: "image" }
+                        { label: "Garden image", name: "image", widget: "image" },
+                        { label: "Google map URL", name: "google_map_url", widget: "string" },
+                        { label: "Latitude", name: "lat", widget: "number" },
+                        { label: "Longtitude", name: "lng", widget: "number" },
+                        { label: "Map pin title", name: "map_title", widget: "string" },
                     ]
                 }
             ]
         }
     ]
 };
+
+/**
+ * 
+ * END OF COLLECTION DEFINITIONS
+ *
+**/
 
 const user = window.netlifyIdentity ? window.netlifyIdentity.currentUser() : null;
 const roles = user?.app_metadata?.roles || [];
