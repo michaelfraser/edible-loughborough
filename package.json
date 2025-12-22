@@ -1,5 +1,6 @@
 {
   "devDependencies": {
-    "decap-server": "^3.4.0"
+    "decap-server": "^3.4.0",
+    "netlify-cli": "^23.13.0"
   }
 }
