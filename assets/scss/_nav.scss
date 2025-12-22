@@ -32,6 +32,63 @@ nav {
         text-decoration-color: currentColor;
         text-underline-offset: var(--nav-underline-offset);
     }
+
+    .social-link {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+
+        .custom-tooltip {
+            /* 1. Behavior: Hidden by default */
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none; // Prevents mouse flicker when moving over the tooltip
+
+            /* 2. Positioning: Below the icon */
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
+
+            /* 3. Visual Styling */
+            background-color: $light-color;
+            color: $primary-color;
+            text-align: center;
+            padding: 6px 12px;
+            border-radius: .5rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+            white-space: nowrap;
+            box-shadow: 0px 2px 5px rgba($light-color, 0.2);
+
+            transition: opacity 0.2s ease-in-out, visibility 0.2s, transform 0.2s ease-out;
+
+            &.custom-tooltip-last {
+                transform: translateX(-85%);
+
+                &::after {
+                    left: 85%;
+                }
+            }
+        }
+
+        &:hover {
+            .custom-tooltip {
+                visibility: visible;
+                opacity: 1;
+
+                &.custom-tooltip-last {
+                    transform: translateX(-85%) translateY(4px);
+                }
+
+                &:not(.custom-tooltip-last) {
+                    transform: translateX(-50%) translateY(4px);
+                }
+            }
+        }
+    }
 }
 
 .navbar-dark {
@@ -40,7 +97,7 @@ nav {
 
     a:hover path {
         fill: $footer-color;
-    }    
+    }
 }
 
 .navbar-toggler {
