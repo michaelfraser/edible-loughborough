@@ -63,6 +63,13 @@ gardens:
     lat: 52.780561
     lng: -1.22954
     map_title: Warwick Way Flats
+  - name: King George Road Allotment
+    description: \[ TBC ]
+    image: /assets/images/gardens/place-holder.jpg
+    google_map_url: https://maps.app.goo.gl/qFBPH3x8S5CkKxVm6
+    lat: 52.76527
+    lng: -1.19147
+    map_title: King George Road Allotment
   - name: Thorpe Acre Road
     description: >
       Our small garden in Thorpe Acre Road is well known by the locals, who
@@ -74,11 +81,3 @@ gardens:
     lat: 52.776742
     lng: -1.235281
     map_title: Thorpe Acre Road
-  - name: King George Road Allotment
-    description: |
-      TBC
-    image: /assets/images/gardens/place-holder.jpg
-    google_map_url: https://maps.app.goo.gl/qFBPH3x8S5CkKxVm6
-    lat: 52.76527
-    lng: -1.19147
-    map_title: King George Road Allotment
