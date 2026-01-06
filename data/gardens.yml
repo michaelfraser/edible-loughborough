@@ -1,14 +1,12 @@
 gardens:
   - name: Fearon Hall
-    description: >-
-      Fearon Hall is our home, where we have our beautiful greenhouse and sheds;
-      where we have our parties, workshops, gatherings. We use two of the
-      planters facing the Parish Church to grow food. Our gardens radiate out
-      from this centre.
-
-
-      We grow on two beds on Rectory Road. One is fronted by a lovely raised bed made by Glebe Workskills and paid for by Chesterton House Financial Planning. We put it there to deter people from driving onto the garden and squashing the plants!
-    image: /images/gardens/place-holder.jpg
+    description: Fearon Hall is our home, where we have our beautiful greenhouse and
+      sheds; where we have our parties, workshops, gatherings.  We grow food on
+      two beds on Rectory Road.  One is fronted by a lovely raised bed made by
+      Glebe House Work Skills and paid for by Chesterton House Financial
+      Planning.  We put it there to deter people from driving onto the garden
+      and squashing the plants!
+    image: images/gardens/fearonhallbed.jpg
     google_map_url: https://maps.app.goo.gl/rEYqJimwmPqX5sCU9
     lat: 52.775517
     lng: -1.20373
