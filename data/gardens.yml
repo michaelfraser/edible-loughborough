@@ -42,17 +42,17 @@ gardens:
     description: The IEL garden in front of Knightthorpe Methodist Church has to be
       seen.  A lovely spot but also amazingly productive of healthy organic
       food, free to anyone who cares to wander in off the street.
-    image: /images/gardens/knightthorpe-church.jpg
+    image: images/gardens/kmc.jpg
     google_map_url: https://maps.app.goo.gl/tuvofNNyucRXtCaFA
     lat: 52.777257
     lng: -1.22715
     map_title: Knightthorpe Methodist Church
   - name: Warwick Way Flats
-    description: >
-      At Warwick Way Flats we have two raised beds and a ground level patch of
-      soil. Strawberries, beans, beetroot, peas, courgettes are all likely to be
-      growing there in the summer months.
-    image: /images/gardens/warwick-way-flats.jpg
+    description: At the **Warwick Way Flats** we have several raised beds in front
+      of the Association café and at the end of the Orwell Close car
+      park.  Strawberries, beans, beetroot, peas, courgettes are all likely to
+      be growing there in the summer months.
+    image: images/gardens/warwayflats.jpg
     google_map_url: https://maps.app.goo.gl/TvaPDbimR4KWaiS98
     lat: 52.780561
     lng: -1.22954
@@ -68,8 +68,11 @@ gardens:
     lng: -1.235281
     map_title: Thorpe Acre Road
   - name: King George Road Allotment
-    description: Blah Blah Blah
-    image: /assets/images/gardens/place-holder.jpg
+    description: The **IEL Allotment** is off King George Road near Paget Pastures.
+      This is a space for the more confident food growers among us to practice
+      their skills. Most of the food produced goes to food banks, and there is
+      plenty of it. It’s a lovely place for our summer parties as well.
+    image: images/gardens/allotment.jpg
     google_map_url: https://maps.app.goo.gl/qFBPH3x8S5CkKxVm6
     lat: 52.76527
     lng: -1.19147
