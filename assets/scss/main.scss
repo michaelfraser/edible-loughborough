@@ -83,6 +83,15 @@ svg {
     display: inline-block;
 }
 
+a {
+    color: $links;
+    text-decoration: underline;
+}
+ a:hover {
+    color: darken($links, 10%);
+    text-decoration: none;
+}
+
 path {
     transition: fill 0.3s;
 }
