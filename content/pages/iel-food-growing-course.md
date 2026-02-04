@@ -1,6 +1,6 @@
 ---
 title: IEL Food Growing Course
-slug: Food-growing-course
+slug: food-growing
 layout: single
 date: 2026-02-04T20:53:00.000+00:00
 draft: false
