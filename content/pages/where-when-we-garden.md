@@ -11,6 +11,8 @@ draft: false
 
 Join us at our different gardens throughout the week. Everyone welcome — whether you stay 20 minutes or more, want to just chat, maybe see what we're doing or have any questions.
 
+## From March 2026
+
 ### Mondays 6pm - 8pm
 
 * Thorpe Acre Road 
