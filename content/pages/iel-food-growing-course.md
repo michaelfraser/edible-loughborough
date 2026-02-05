@@ -7,4 +7,4 @@ draft: false
 ---
 ## Want to grow your own food but don't know how to get started?
 
-![](screenshot-from-2025-12-17-07-53-24.png "Food Growing Course")
+{{<img src="images/2026_growing_course.jpg" alt="2026 growing course" width="800x" >}}
