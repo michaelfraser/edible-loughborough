@@ -4,13 +4,13 @@ help: ## This help
 	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z_-]+:.*?## / {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
 build: ## Build project
-	 rm -rf public && hugo
+	 rm -rf public && hugo --gc --minify
 
-netlify: ## Build and deploy to Netlify
-	rm -rf public && netlify deploy --prod
+netlify: build ## Build and deploy to Netlify
+	netlify deploy --prod
 
-netlify-staging: ## Build and deploy to Netlify Staging environment
-	rm -rf public && netlify deploy --alias=staging
+netlify-staging: build ## Build and deploy to Netlify Staging environment
+	netlify deploy --alias=staging
 
 start-hugo: ## start Hugo server
 	hugo server -D
