@@ -1,4 +1,4 @@
-baseURL = 'https://staging--incredibleedibleloughborough.netlify.app/'
+baseURL = 'https://incredibleedibleloughborough.netlify.app/'
 languageCode = 'en-gb'
 title = 'Incredible Edible Loughborough'
 disableKinds = ['taxonomy', 'term']
