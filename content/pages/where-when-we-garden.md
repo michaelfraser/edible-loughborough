@@ -9,7 +9,7 @@ draft: false
 
 ## Come Garden With Us
 
-Join us at our different [gardens ](https://incredibleedibleloughborough.netlify.app/our-gardens/)throughout the week. Everyone welcome — whether you stay 20 minutes or more, want to just chat, maybe see what we're doing or have any questions. **[See here where we are.](https://incredibleedibleloughborough.netlify.app/our-gardens/)**
+Join us at our different [gardens ](/our-gardens/)throughout the week. Everyone welcome — whether you stay 20 minutes or more, want to just chat, maybe see what we're doing or have any questions. **[See here where we are.](/our-gardens/)**
 
 ## From March 2026
 
@@ -30,11 +30,9 @@ Join us at our different [gardens ](https://incredibleedibleloughborough.netlify
 
 * King George Road Allotment or gardens around Fearon Hall
 
-###### [Contact us for more information](https://incredibleedibleloughborough.netlify.app/contact-us/)
+###### [Contact us for more information](/contact-us/)
 
-###### [Garden locations and information found here](https://incredibleedibleloughborough.netlify.app/our-gardens/)
-
-[](https://incredibleedibleloughborough.netlify.app/our-gardens/)
+###### [Garden locations and information found here](/our-gardens/)
 
 #### Do I need experience?
 

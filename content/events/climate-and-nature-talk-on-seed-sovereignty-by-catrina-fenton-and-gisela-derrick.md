@@ -19,4 +19,4 @@ Climate and Nature Talk on Seed Sovereignty by Catrina Fenton and Gisela Derrick
 
 Booking essential to non-members
 
-[Contact us](https://incredibleedibleloughborough.netlify.app/contact-us/) to reserve a place
+[Contact us](/contact-us/) to reserve a place
