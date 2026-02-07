@@ -2,7 +2,7 @@
 {{ $map := .Page.Params.garden_map }}
 
 {{ if $map }}
-    {{ partial "optimizedImage.html" (dict 
+    {{ partial "optimize-image.html" (dict 
         "path" $map.path 
         "alt" $map.alt 
         "title" $map.title 

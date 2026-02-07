@@ -12,11 +12,11 @@
 {{ $imageResource := resources.Get $imagePath }}
 
 {{ with $imageResource }}
-    {{ $optimizedImage := .Resize $resizeOption | resources.Fingerprint "md5" }}
+    {{ $optimizeImage := .Resize $resizeOption | resources.Fingerprint "md5" }}
 
-    <img src="{{ $optimizedImage.RelPermalink }}" 
-         width="{{ $optimizedImage.Width }}" 
-         height="{{ $optimizedImage.Height }}"
+    <img src="{{ $optimizeImage.RelPermalink }}" 
+         width="{{ $optimizeImage.Width }}" 
+         height="{{ $optimizeImage.Height }}"
          alt="{{ $imageAlt }}" 
          title="{{ $imageTitle }}" 
          loading="{{ $loading }}" 
