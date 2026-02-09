@@ -8,7 +8,9 @@
         "title" $map.title 
         "class" $map.class 
         "width" $map.width
-        "loading" "eager"
+        "loading" $map.loading
+        "fetchpriority" "high"
+
     ) }}
 {{ else }}
     {{ warnf "Missing 'garden_map' in Front Matter for page: %s" .Page.File.Path }}
