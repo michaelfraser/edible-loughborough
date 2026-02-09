@@ -2,6 +2,13 @@
 {{- $index := .index -}}
 
 <div>
-    {{- $params := dict "path" $g.image "alt" $g.name "title" $g.name "class" "img-fluid w-100" "width" "600" -}}
+    {{- 
+        $params := dict 
+        "path" $g.image 
+        "alt" $g.name 
+        "title" $g.name 
+        "class" "img-fluid w-100" 
+        "width" "800" 
+    -}}
     {{ partial "optimize-image.html" $params }}    
 </div>
