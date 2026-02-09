@@ -19,3 +19,23 @@ enableRobotsTXT = true
 
 [permalinks]
   pages = "/:slug/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true # Often needed for Bootstrap components in Markdown
+
+[build]
+  writeStats = true # Generates hugo_stats.json (required if you use PurgeCSS later)
+  
+[[module.mounts]]
+  source = "assets"
+  target = "assets"
+
+[[module.mounts]]
+  source = "node_modules/bootstrap/scss"
+  target = "assets/scss/bootstrap"
+
+[[module.mounts]]
+  source = "node_modules/bootstrap"
+  target = "assets/js/bootstrap"  
