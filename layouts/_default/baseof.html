@@ -1,31 +1,8 @@
-{{ $bgImage := resources.Get "images/homepage.jpg" }}
-{{ $small := $bgImage.Resize "800x webp q85" | resources.Fingerprint "md5" }}
-{{ $medium := $bgImage.Resize "1200x webp q85" | resources.Fingerprint "md5" }}
-{{ $large := $bgImage.Resize "1920x webp q85" | resources.Fingerprint "md5" }}
-
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     {{ partial "head.html" . }}
-    <style>
-        /* @TODO remove */
-        .image-theme {
-            --bg-image: url('{{ $large.RelPermalink }}');
-        }
-
-        @media (max-width: var(--xl)) {
-            .image-theme {
-                --bg-image: url('{{ $medium.RelPermalink }}');
-            }
-        }
-
-        @media (max-width: var(--md)) {
-            .image-theme {
-                --bg-image: url('{{ $small.RelPermalink }}');
-            }
-        }
-    </style>
 </head>
 
 <body>
