@@ -1,26 +1,38 @@
-{{/* Expects a dictionary like: {path: "...", alt: "...", title: "...", class: "...", width: "...", loading: "lazy"} */}}
 {{ $params := . }}
-
 {{ $imagePath := print $params.path | replaceRE "^/assets/" "" | replaceRE "^assets/" "" }}
-{{ $imageAlt := $params.alt | default (path.Base $imagePath | humanize) }}
-{{ $imageTitle := $params.title | default (path.Base $imagePath | humanize) }}
-{{ $imageClass := $params.class | default "optimized-image" }}
-{{ $imageWidth := $params.width | default "800" }}
-{{ $loading := $params.loading | default "lazy" }}
-
-{{ $resizeOption := printf "%sx webp" $imageWidth }}
 {{ $imageResource := resources.Get $imagePath }}
+{{ $finalOutput := "" }}
 
 {{ with $imageResource }}
-    {{ $optimizeImage := .Resize $resizeOption | resources.Fingerprint "md5" }}
+    {{ $targetWidth := int ($params.w | default 0) }}
 
-    <img src="{{ $optimizeImage.RelPermalink }}" 
-         width="{{ $optimizeImage.Width }}" 
-         height="{{ $optimizeImage.Height }}"
-         alt="{{ $imageAlt }}" 
-         title="{{ $imageTitle }}" 
-         loading="{{ $loading }}" 
-         class="{{ $imageClass }}">
+    {{ if $params.return_resource }}
+        {{ $q := "q40" }}
+        {{ if le $targetWidth 360 }} {{ $q = "q25" }} {{ end }}        
+        {{ $finalOutput = .Resize (printf "%dx webp %s box strip" $targetWidth $q) | resources.Fingerprint "md5" }}
+    {{ else }}
+        {{ $widths := slice 360 471 942 }}
+        {{ $srcset := slice }}
+        
+        {{ range $widths }}
+            {{ $q_loop := "q40" }}
+            {{ if eq . 360 }} {{ $q_loop = "q25" }} {{ end }}
+            {{ $loopResized := $imageResource.Resize (printf "%dx webp %s box strip" . $q_loop) }}
+            {{ $srcset = $srcset | append (printf "%s %dw" $loopResized.RelPermalink .) }}
+        {{ end }}
+
+        {{ $fallback := $imageResource.Resize "471x webp q40 box strip" }}
+
+        {{ $finalOutput = printf `<img src="%s" srcset="%s" sizes="(max-width: 480px) 33vw, 471px" width="471" height="353" alt="%s" loading="%s" fetchpriority="%s" class="%s" style="height: auto; width: 100%; max-width: 471px; aspect-ratio: 471 / 353; display: block;">` 
+            $fallback.RelPermalink 
+            (delimit $srcset ", ") 
+            ($params.alt | default "Map detail") 
+            ($params.loading | default "lazy") 
+            ($params.fetchpriority | default "low") 
+            ($params.class | default "img-fluid") | safeHTML }}
+    {{ end }}
 {{ else }}
-    {{ warnf "Image asset not found at path: %s" $imagePath }}
+    {{ warnf "Image not found: %s" $imagePath }}
 {{ end }}
+
+{{ return $finalOutput }}
