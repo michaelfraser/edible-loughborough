@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'top';
 
 footer {
   color: $primary-color;
@@ -41,10 +42,11 @@ footer::before {
   pointer-events: none;
 }
 
-footer [class*='decor-'] .bulb,
-footer [class*='decor-'] .leaves {
-  background-repeat: no-repeat;
-  position: absolute;
+footer .decor-item {
+  &.bulb, &.leaves {
+    background-repeat: no-repeat;
+    position: absolute;
+  }
 }
 
 
