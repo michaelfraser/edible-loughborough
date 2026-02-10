@@ -8,7 +8,7 @@
 <hr>
 {{- if modBool $index 2 }}
 {{/* Odd index: text left, image right on desktop */}}
-<div class="row align-items-top">
+<div class="row align-items-top m-0">
     <div class="col-12 col-md-6 order-1 order-md-1">
         {{ partial "gardens-text.html" $context }}
     </div>
@@ -18,7 +18,7 @@
 </div>
 {{- else }}
 {{/* Even index: image left, text right on desktop */}}
-<div class="row align-items-top pb-1">
+<div class="row align-items-top m-0 pb-1">
     <div class="col-12 col-md-6 order-0 order-md-1 mb-2">
         {{ partial "gardens-image.html" $context }}
     </div>
