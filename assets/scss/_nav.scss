@@ -120,12 +120,18 @@ nav {
         width: clamp(250px, 80vw, 400px);
         height: 100vh;
         padding: 3rem 2rem;
-        background: $primary-color !important;
+        background: $footer-color !important;
         box-shadow: -4px 0 12px rgba(0, 0, 0, 0.2);
         overflow-y: auto;
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
         z-index: 1050;
+        
+        .nav-link, .active {
+            color: $light-color !important;
+            text-shadow: none;
+            opacity: 1 !important;
+        }
 
         &.show { transform: translateX(0); }
     }
