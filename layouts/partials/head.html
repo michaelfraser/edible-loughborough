@@ -1,15 +1,74 @@
-{{ $style := resources.Get "scss/main.scss" | css.Sass | resources.Minify | resources.Fingerprint "sha384" }}
-{{ $js := resources.Get "js/site.js" | js.Build | resources.Minify | resources.Fingerprint "sha384" }}
+{{ $montserrat := resources.Get "fonts/montserrat-v31-latin-regular.woff2" | fingerprint }}
+{{ $montserrat700 := resources.Get "fonts/montserrat-v31-latin-700.woff2" | fingerprint }}
+{{ $londrina := resources.Get "fonts/londrina-solid-v19-latin-regular.woff2" | fingerprint }}
+
+{{ $sassVars := dict 
+    "montserrat-path" (strings.TrimPrefix "/assets" $montserrat.RelPermalink) 
+    "montserrat700-path" (strings.TrimPrefix "/assets" $montserrat700.RelPermalink) 
+    "londrina-path" (strings.TrimPrefix "/assets" $londrina.RelPermalink) 
+}}
+
+{{ $opts := dict 
+    "transpiler" "libsass" 
+    "targetPath" "css/main.css" 
+    "includePaths" (slice "assets/scss") 
+    "vars" $sassVars 
+}}
+{{ $css := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "main.scss" . | toCSS $opts | postCSS | minify }}
+
+{{/* 14KB = 14,336 bytes */}}
+{{ if gt (len $css.Content) 14336 }}
+  {{ errorf "⚠️ CSS BUDGET EXCEEDED: Current size is %d bytes (Limit: 14,336)" (len $css.Content) }}
+{{ end }}
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{{- $description := .Description | default .Site.Params.description -}}
+{{- if $description -}}
+    <meta name="description" content="{{ $description }}">
+{{- end -}}
+
 <title>{{ .Title }} - {{ .Site.Params.ShortTitle }}</title>
 
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
-<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+<link rel="preload" href="{{ $montserrat.RelPermalink }}" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="{{ $montserrat700.RelPermalink }}" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="{{ $londrina.RelPermalink }}" as="font" type="font/woff2" crossorigin="anonymous">
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script defer src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<style>
+  {{ $css.Content | safeCSS }}
+</style>
+
+{{ $opts := dict "transpiler" "libsass" "targetPath" "css/_footer.css" }}
+{{ $footerCSS := resources.Get "scss/_footer.scss" | toCSS $opts | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $footerCSS.RelPermalink }}" media="print" onload="this.media='all'">
+
+{{ $opts := dict "minify" true "target" "es2015" }}
+{{ with resources.Get "js/site.js" | js.Build $opts | fingerprint }}
+  <script src="{{ .RelPermalink }}" defer></script>
+{{ end }}
 <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+{{ if .IsHome }}
+    {{ $imgData := dict "small" 640 "medium" 1200 "large" 1600 }}
+    {{ $res := dict }}
+
+    {{ range $name, $width := $imgData }}
+    {{ $proc := partial "optimize-image.html" (dict "path" "images/homepage.jpg" "w" $width "return_resource" true) }}
+    {{ $res = merge $res (dict $name $proc) }}
+    {{ end }}
+
+    {{ $images := dict "1200px" $res.large "768px" $res.medium "0px" $res.small }}
+
+<style>
+  {{ range $width, $img := $images }}
+    {{ if ne $width "0px" }}
+      @media (min-width: {{ $width }}) { :root { --bg-image: url('{{ $img.RelPermalink }}'); } }
+    {{ else }}
+      :root { --bg-image: url('{{ $img.RelPermalink }}'); }
+    {{ end }}
+  {{ end }}
+</style>
+
+{{ end }}
