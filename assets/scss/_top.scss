@@ -62,13 +62,6 @@
   }
 }
 
-@media screen and (max-width: $lg) {
-  .has-js .back-to-top {
-    right: 0.5rem;
-    bottom: 0.5rem;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .has-js .back-to-top {
     transition: opacity 0.01ms, background-color 0.01ms;
