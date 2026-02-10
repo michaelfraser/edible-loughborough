@@ -139,25 +139,47 @@ const pagesCollection = {
  *
 **/
 
-const user = window.netlifyIdentity ? window.netlifyIdentity.currentUser() : null;
-const roles = user?.app_metadata?.roles || [];
-const collections = [eventsCollection, gardensCollection, pagesCollection];
-const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+const initCMS = (user) => {
+    const roles = user?.app_metadata?.roles || [];
+    const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+    const collections = [eventsCollection, gardensCollection, pagesCollection];
 
-if (isLocal || roles.includes('admin')) {
-    collections.push(menuCollection);
-}
+    if (isLocal || roles.includes('admin')) {
+        collections.push(menuCollection);
+    }
 
-const cmsConfig = {
-    load_config_file: false,
-    local_backend: isLocal,
-    backend: {
-        name: 'git-gateway', branch: 'main', squash_merges: true
-    },
-    media_folder: '/assets/images',
-    public_folder: 'images',
-    publish_mode: 'simple',
-    collections: collections
+    window.CMS.init({
+        config: {
+            load_config_file: false,
+            local_backend: isLocal,
+            backend: {
+                name: 'git-gateway',
+                repo: 'michaelfraser/edible-loughborough',
+                branch: 'main',
+                squash_merges: true,
+            },
+            media_folder: '/assets/images',
+            public_folder: 'images',
+            publish_mode: 'simple',
+            collections: collections
+        }
+    });
 };
 
-window.CMS.init({ config: cmsConfig });
+const run = () => {
+    const user = window.netlifyIdentity.currentUser();
+
+    if (user) {
+        initCMS(user);
+    } else {
+        window.netlifyIdentity.open();
+        window.netlifyIdentity.on("login", (user) => {
+            window.netlifyIdentity.close();
+            initCMS(user);
+        });
+    }
+};
+
+if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", () => run());
+}
