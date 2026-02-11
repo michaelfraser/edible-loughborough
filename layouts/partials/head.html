@@ -11,7 +11,7 @@
 {{ $opts := dict 
     "transpiler" "libsass" 
     "targetPath" "css/main.css" 
-    "includePaths" (slice "assets/scss") 
+    "includePaths" (slice "assets/scss" "node_modules") 
     "vars" $sassVars 
 }}
 {{ $css := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "main.scss" . | toCSS $opts | postCSS | minify }}
