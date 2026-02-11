@@ -73,7 +73,7 @@ const eventsCollection = {
     editor: { preview: false },
     fields: [
         { label: "Title", name: "title", widget: "string" },
-        { label: "Publish Date", name: "publish_date", widget: "datetime" },
+        { label: "Publish Date", name: "date", widget: "datetime" },
         { label: "Event Date", name: "event_date", widget: "datetime" },
         { label: "Description", name: "description", widget: "string" },
         { label: "Body", name: "body", widget: "markdown" }
@@ -139,47 +139,32 @@ const pagesCollection = {
  *
 **/
 
-const initCMS = (user) => {
-    const roles = user?.app_metadata?.roles || [];
-    const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
-    const collections = [eventsCollection, gardensCollection, pagesCollection];
+const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+const collections = [eventsCollection, gardensCollection, pagesCollection, menuCollection];
 
-    if (isLocal || roles.includes('admin')) {
-        collections.push(menuCollection);
+window.CMS.init({
+    config: {
+        load_config_file: false, 
+        local_backend: isLocal,
+        backend: {
+            name: 'git-gateway',
+            repo: 'michaelfraser/edible-loughborough',
+            branch: 'main',
+            squash_merges: true,
+        },
+        media_folder: '/assets/images',
+        public_folder: 'images',
+        publish_mode: 'simple',
+        collections: collections
     }
-
-    window.CMS.init({
-        config: {
-            load_config_file: false,
-            local_backend: isLocal,
-            backend: {
-                name: 'git-gateway',
-                repo: 'michaelfraser/edible-loughborough',
-                branch: 'main',
-                squash_merges: true,
-            },
-            media_folder: '/assets/images',
-            public_folder: 'images',
-            publish_mode: 'simple',
-            collections: collections
-        }
-    });
-};
-
-const run = () => {
-    const user = window.netlifyIdentity.currentUser();
-
-    if (user) {
-        initCMS(user);
-    } else {
-        window.netlifyIdentity.open();
-        window.netlifyIdentity.on("login", (user) => {
-            window.netlifyIdentity.close();
-            initCMS(user);
-        });
-    }
-};
+});
 
 if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", () => run());
+    window.netlifyIdentity.on("init", (user) => {
+        if (!user) {
+            window.netlifyIdentity.on("login", () => {
+                document.location.reload();
+            });
+        }
+    });
 }
