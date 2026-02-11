@@ -15,17 +15,19 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
-      - name: Install Node Dependencies
-        run: npm ci          
-
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "0.128.0"
           extended: true
 
-      - name: Build Hugo site
-        run: make build-staging && cp netlify.toml public/
+      - name: Build and Prepare Assets
+        env:
+          HUGO_ENVIRONMENT: staging 
+        run: |
+          npm ci
+          make build-staging
+          cp netlify.toml public/
 
       - name: Deploy Staging to Netlify
         uses: nwtgck/actions-netlify@v3
