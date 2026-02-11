@@ -23,6 +23,7 @@
 
 <body>
     {{ partial "header-wrapper.html" . }}
+    <main>
     {{ block "main" . }}{{ end }}
     </main>
     {{ partial "footer.html" (dict "context" . "showVegetableImages" false) }}

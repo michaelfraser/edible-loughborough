@@ -1,16 +1,15 @@
+{{ $mainClass := cond .IsHome "internal-main" "" }}
 <!DOCTYPE html>
 <html lang="en">
-    
-<head>
-    {{ partial "head.html" . }}
-</head>
-
-<body>
-    {{ partial "header-wrapper.html" . }}
-    {{ block "main" . }}{{ end }}
-    </main>
-    {{ partial "footer.html" (dict "context" . "showVegetableImages" true) }}
-    <a class="back-to-top" href="#top">Back to top</a>
-</body>
-
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+    <body>
+        {{ partial "header-wrapper.html" . }}
+        <main class="{{ $mainClass }}">
+        {{ block "main" . }}{{ end }}
+        </main>
+        {{ partial "footer.html" (dict "context" . "showVegetableImages" true) }}
+        <a class="back-to-top" href="#top">Back to top</a>
+    </body>
 </html>
