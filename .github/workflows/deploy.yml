@@ -15,27 +15,24 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
+      - name: Install Node Dependencies
+        run: npm ci          
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "0.128.0"
           extended: true
 
-      - name: Install dependencies
-        run: npm ci
-
       - name: Build Hugo site
         run: make build-staging && cp netlify.toml public/
 
-      # Save the build so production uses the EXACT same files
-      - name: Upload Build Artifact
-        uses: actions/upload-artifact@v4
+      - name: Deploy Staging to Netlify
+        uses: nwtgck/actions-netlify@v3
         with:
-          name: site-build
-          path: public/
-
-      - name: Deploy to Staging
-        run: make netlify-staging
+          publish-dir: './public'
+          production-deploy: false
+          alias: staging
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
