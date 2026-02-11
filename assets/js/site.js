@@ -7,7 +7,6 @@ import Collapse from './bootstrap/js/src/collapse.js';
     console.error('Back to top button not found');
     return;
   }
-  const scrollThreshold = 400; // Show button after scrolling 400px down
 
   topButton.addEventListener('click', function(e) {
     e.preventDefault(); // Stop the default #top jump
@@ -24,14 +23,15 @@ import Collapse from './bootstrap/js/src/collapse.js';
   });
 
   function updateButtonVisibility() {
+    const scrollThreshold = 400; // Show button after scrolling 400px down
     const scrolled = window.scrollY;
     const windowHeight = window.innerHeight;
     const documentHeight = document.documentElement.scrollHeight;
     
     const pastThreshold = scrolled > scrollThreshold;
-    const atBottom = (scrolled + windowHeight) >= documentHeight - 10;
-    
-    if (pastThreshold || atBottom) {
+    const atBottom = scrolled + windowHeight >= documentHeight - 10;
+    const scrolledToBottom = (scrolled > 0 ) && atBottom;    
+    if (pastThreshold || scrolledToBottom) {
       topButton.classList.add('visible');
     } else {
       topButton.classList.remove('visible');
