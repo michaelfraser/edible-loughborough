@@ -26,6 +26,7 @@ jobs:
           HUGO_ENVIRONMENT: staging 
         run: |
           npm ci
+          ls -l
           make build-staging
           cp netlify.toml public/
 
