@@ -39,6 +39,4 @@ markup: "html"
         <p>
             We believe that to plant a seed is to plant a promise. And we have lots of fun along the way.
         </p>
-        <!-- <a class="btn btn-secondary rounded-pill" href="/our-history" target="_self" role="button">OUR HISTORY</a> -->
-    </div>
 </section>
