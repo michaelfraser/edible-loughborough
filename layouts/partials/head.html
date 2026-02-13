@@ -1,6 +1,6 @@
-{{ $montserrat := resources.Get "fonts/montserrat-v31-latin-regular.woff2" | fingerprint }}
-{{ $montserrat700 := resources.Get "fonts/montserrat-v31-latin-700.woff2" | fingerprint }}
-{{ $londrina := resources.Get "fonts/londrina-solid-v19-latin-regular.woff2" | fingerprint }}
+{{ $montserrat := resources.Get "fonts/montserrat-v31-latin-regular.woff2" | fingerprint "md5" }}
+{{ $montserrat700 := resources.Get "fonts/montserrat-v31-latin-700.woff2" | fingerprint "md5" }}
+{{ $londrina := resources.Get "fonts/londrina-solid-v19-latin-regular.woff2" | fingerprint "md5" }}
 
 {{ $sassVars := dict 
     "montserrat-path" (strings.TrimPrefix "/assets" $montserrat.RelPermalink) 
