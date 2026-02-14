@@ -1,9 +1,14 @@
 @import 'variables';
 @import 'top';
 
+%abs-item {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 footer {
   color: $primary-color;
-  text-align: center;
   background-color: $footer-color;
   width: 100%;
   min-height: 250px;
@@ -14,6 +19,7 @@ footer {
   flex-direction: column;
   justify-content: flex-end;
   z-index: 1;
+  text-align: left;
 
   a {
     color: $light-color;
@@ -26,119 +32,107 @@ footer {
 
   p.copyright {
     margin-bottom: 0.5em;
-  }
-}
+    text-align: center;
 
-footer::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 2em;
-  width: 5.4em;
-  height: 2.2em;
-  background-color: $footer-color;
-  z-index: 3;
-  pointer-events: none;
-}
-
-footer .decor-item {
-  &.bulb, &.leaves {
-    background-repeat: no-repeat;
-    position: absolute;
-  }
-}
-
-
-footer .decor-fork {
-  background-image: url("/assets/images/fork.webp");
-  background-size: contain;
-  height: 13.7em;
-  left: 2em;
-  position: absolute;
-  top: -11.5em;
-  width: 5.4em;
-  z-index: 2;
-}
-
-footer .decor-beet {
-  height: 10.341em;
-  left: 35%;
-  position: absolute;
-  top: -3.8em;
-  width: 4.35em;
-  z-index: 4;
-}
-
-footer .decor-beet .bulb {
-  background-image: url("/assets/images/beet_bulb.webp");
-  background-size: 2.5em 6.95em;
-  bottom: 0;
-  height: 6.95em;
-  right: .35em;
-  width: 2.5em;
-  z-index: 1;
-}
-
-footer .decor-beet .leaves {
-  background-image: url("/assets/images/beet_leaves.webp");
-  background-size: 4.35em 3.95em;
-  height: 3.95em;
-  left: 0;
-  top: 0;
-  width: 4.35em;
-  z-index: 2;
-}
-
-footer .decor-parsnip {
-  height: 12.008em;
-  position: absolute;
-  right: 13%;
-  top: -5.925em;
-  width: 4.35em;
-  z-index: 4;
-}
-
-footer .decor-parsnip .bulb {
-  background-image: url("/assets/images/parsnip_bulb.webp");
-  background-size: 1.275em 6.4em;
-  height: 6.4em;
-  left: 1.6em;
-  bottom: 0;
-  width: 1.275em;
-  z-index: 1;
-}
-
-footer .decor-parsnip .leaves {
-  background-image: url("/assets/images/parsnip_leaves.webp");
-  background-size: 4.35em 5.925em;
-  height: 5.925em;
-  left: 0;
-  top: 0;
-  width: 4.35em;
-  z-index: 2;
-  image-rendering: pixelated;
-}
-
-@media screen and (max-width: $md) {
-
-  footer .decor-beet {
-    left: 60%;
+    @media screen and (max-width: $sm) {
+      width: 80%;
+      text-align: left;
+      padding-left: 0.5em;
+    }
   }
 
-  footer .decor-parsnip {
-    display: none;
+  &::before {
+    content: '';
+    @extend %abs-item;
+    top: 0;
+    left: 2em;
+    width: 5.4em;
+    height: 2.2em;
+    background-color: $footer-color;
+    z-index: 3;
+    pointer-events: none;
   }
 
-  footer {
-    text-align: left !important; 
+  .decor-item {
+    &.bulb, &.leaves {
+      @extend %abs-item;
+    }
   }
-}
 
-@media screen and (max-width: $sm) {
+  .decor-fork {
+    @extend %abs-item;
+    background-image: url("/assets/images/fork.webp");
+    height: 13.7em;
+    left: 2em;
+    top: -11.5em;
+    width: 5.4em;
+    z-index: 2;
+  }
 
-  footer p.copyright {
-    width: 80%;
-    text-align: left;
-    padding-left: 0.5em;
+  .decor-beet {
+    @extend %abs-item;
+    height: 10.341em;
+    left: 35%;
+    top: -3.8em;
+    width: 4.35em;
+    z-index: 4;
+
+    @media screen and (max-width: $md) {
+      left: 60%;
+    }
+
+    .bulb {
+      background-image: url("/assets/images/beet_bulb.webp");
+      background-size: 2.5em 6.95em;
+      bottom: 0;
+      height: 6.95em;
+      right: .35em;
+      width: 2.5em;
+      z-index: 1;
+    }
+
+    .leaves {
+      background-image: url("/assets/images/beet_leaves.webp");
+      background-size: 4.35em 3.95em;
+      height: 3.95em;
+      left: 0;
+      top: 0;
+      width: 4.35em;
+      z-index: 2;
+    }
+  }
+
+  .decor-parsnip {
+    @extend %abs-item;
+    height: 12.008em;
+    right: 13%;
+    top: -5.925em;
+    width: 4.35em;
+    z-index: 4;
+
+    @media screen and (max-width: $md) {
+      display: none;
+    }
+
+    .bulb {
+      background-image: url("/assets/images/parsnip_bulb.webp");
+      background-size: 1.275em 6.4em;
+      height: 6.4em;
+      left: 1.6em;
+      bottom: 0;
+      width: 1.275em;
+      z-index: 1;
+    }
+
+    .leaves {
+      background-image: url("/assets/images/parsnip_leaves.webp");
+      background-size: 4.35em 5.925em;
+      height: 5.925em;
+      left: 0;
+      top: 0;
+      width: 4.35em;
+      z-index: 2;
+      image-rendering: pixelated;
+    }
   }
 }
