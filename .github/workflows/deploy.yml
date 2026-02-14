@@ -27,6 +27,7 @@ jobs:
         run: |
           npm ci
           # run Hugo twice to ensure that the purgecss file is created
+          export HUGO_PARAMS_ignoresmallcsscheck=true
           hugo --gc --environment staging
           make build-staging
           cp netlify.toml public/
