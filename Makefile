@@ -27,3 +27,6 @@ start-cms: ## Start Decap CMS
 start-all: clean ## Start both Hugo server and Decap CMS
 	@echo "Starting Hugo server and Decap CMS..."
 	@$(MAKE) -j2 start-hugo start-cms	
+
+update-headers: ## A script to update the _headers file
+	@go run bin/update_headers.go
