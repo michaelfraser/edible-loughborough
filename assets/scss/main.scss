@@ -151,7 +151,7 @@ main {
     flex: 1 0 auto;
     position: relative;
     z-index: 1005;
-    margin-top: 20vh;
+    margin-top: 3rem;
     margin-bottom: 10rem;
     width: 100%;
 }
@@ -228,6 +228,7 @@ path {
 }
 
 .hero-content {
+    margin-top: 6rem;
     margin-bottom: 50vh;
     display: flex;
     align-items: center;
@@ -235,7 +236,6 @@ path {
     padding: 0 1rem;
     text-align: center;
 }
-
 
 .btn {
     background-color: $light-color;
