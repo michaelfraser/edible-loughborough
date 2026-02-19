@@ -3,6 +3,7 @@ title: Get Involved
 slug: get-involved
 layout: single
 date: 2025-12-12
+description: Want to get involved with Incredible Edible Loughborough? Discover volunteer roles, gardening sessions, and community projects focused on local food and sustainability.
 draft: false
 ---
 # Get Involved
