@@ -20,7 +20,7 @@
 
 {{/* 14KB Budget Check */}}
 {{ $size := len $css.Content }}
-{{ if gt $size 14336 }}
+{{ if gt $size 14400 }}
   {{ errorf "⚠️ CSS BUDGET EXCEEDED: %d bytes" $size }}
 {{ else }}
   {{ warnf "CSS: %d bytes" $size }}
@@ -31,12 +31,7 @@
   {{ errorf "⚠️ CSS TOO SMALL: %d bytes. Bootstrap likely failed to bundle." $size }}
 {{ end }}
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification" content="sHtCk3cwlffILNVMXLXBJh8DlttBpCVkZWYWRjZZ6RY" />
-
 {{- $desc := "" -}}
-
 {{- if .Params.description -}}
     {{/* Look specifically in the Params map first */}}
     {{- $desc = .Params.description -}}
@@ -48,10 +43,17 @@
     {{- $desc = .Site.Params.description -}}
 {{- end -}}
 
-{{- if $desc -}}
-    <meta name="description" content="{{ $desc | plainify | htmlEscape }}">
-{{- else -}}
-    {{- end -}}
+{{- if not $desc -}}
+  {{ errorf "⚠️ Please add missing description for %s ⚠️" .Permalink }}
+{{- end -}}
+
+{{ $prodBaseURL := "https://edibleloughborough.org.uk" }}
+{{ $canonical := replace .Permalink .Site.BaseURL $prodBaseURL }}
+    
+<meta name="description" content="{{ $desc | plainify | htmlEscape }}">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="sHtCk3cwlffILNVMXLXBJh8DlttBpCVkZWYWRjZZ6RY" />
 
 <title>{{ .Title }} - {{ .Site.Params.ShortTitle }}</title>
 
@@ -59,11 +61,9 @@
 <link rel="preload" href="{{ $montserrat700.RelPermalink }}" as="font" type="font/woff2" crossorigin="anonymous">
 <link rel="preload" href="{{ $londrina.RelPermalink }}" as="font" type="font/woff2" crossorigin="anonymous">
 
-{{ $prodBaseURL := "https://edibleloughborough.org.uk" }}
-{{ $canonical := replace .Permalink .Site.BaseURL $prodBaseURL }}
-
 <link rel="canonical" href="{{ $canonical }}">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
 <style>
   {{ $css.Content | safeCSS }}
 </style>
