@@ -3,7 +3,9 @@ title: Where & When We Garden
 slug: garden-times
 layout: single
 date: 2026-02-05T09:01:00.000+00:00
-description: "Discover when and where you can join our community gardening sessions. Find details about weekly locations, times, and what to expect — no experience or sign-up required. Everyone is welcome!"
+description: Discover when and where you can join our community gardening
+  sessions. Find details about weekly locations, times, and what to expect — no
+  experience or sign-up required. Everyone is welcome!
 draft: false
 ---
 # Where & When We Garden
@@ -12,7 +14,7 @@ Come and garden with us. Join us at our different [gardens ](/our-gardens/)throu
 
 ## From March 2026
 
-### Mondays 6pm - 8pm
+### Monday 16 &  23 March 5pm - 6pm
 
 * Thorpe Acre Road 
 * Warwick Way Flats
