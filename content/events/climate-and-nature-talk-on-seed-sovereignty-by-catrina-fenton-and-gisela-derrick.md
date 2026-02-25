@@ -8,16 +8,4 @@ description: Climate and Nature Talk on Seed Sovereignty by Catrina Fenton and
 ---
 # Climate and Nature Talk on Seed Sovereignty
 
-19/02/2026,  7pm - 9pm at Fearon Hall
-
-Climate and Nature Talk on Seed Sovereignty by Catrina Fenton and Gisela Derrick from Garden Organic
-
-* Learn about the Heritage Seed Library at Garden Organic
-* Seed Sovereignty and what this means
-* The importance of open pollinated seeds in adapting to climate change
-* The difference between open pollinated, F1 and GM seeds
-* Sowing your seeds project - identifying & conserving seeds from the Midlands
-
-Booking essential to non-members
-
-[Contact us](/contact-us/) to reserve a place
+{{<img src="images/seed_sovereignty.jpg" alt="Seed Sovereignty" width="800x" >}}
