@@ -6,6 +6,4 @@ draft: false
 description: Climate and Nature Talk on Seed Sovereignty by Catrina Fenton and
   Gisela Derrick
 ---
-# Climate and Nature Talk on Seed Sovereignty
-
 {{<img src="images/seed_sovereignty.jpg" alt="Seed Sovereignty" width="800x" >}}
