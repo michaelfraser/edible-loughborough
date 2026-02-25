@@ -6,7 +6,7 @@
         <h1>Upcoming Events</h1>
         
         <ul class="list-unstyled">
-        {{ range $events.ByDate }}
+        {{ range sort $events "Params.event_date" "desc" }}
             {{ $eventDate := time .Params.event_date }}
             {{ if ge $eventDate $now }}
                 {{ $day := $eventDate.Day }}
@@ -28,7 +28,7 @@
         <br>
         <h3>Past events</h3>
         <ul class="list-unstyled">
-        {{ range $events.ByDate.Reverse }}
+        {{ range sort $events "Params.event_date" "desc" }}
             {{ $eventDate := time .Params.event_date }}
             {{ if lt $eventDate $now }}
                 <li class="mb-1" style="opacity: 0.9;">
