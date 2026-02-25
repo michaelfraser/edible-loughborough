@@ -1,5 +1,5 @@
 ---
-title: Other Events
+title: Other Events in 2025
 date: 2026-02-25T08:36:00.000+00:00
 event_date: 2025-01-01T10:00:00.000+00:00
 draft: false
