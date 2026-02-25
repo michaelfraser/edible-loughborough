@@ -5,6 +5,19 @@ disableKinds = ['taxonomy', 'term']
 ignoreLogs = ['warning-goldmark-raw-html']
 enableRobotsTXT = true
 
+[mediaTypes]
+  [mediaTypes."application/json"]
+    suffixes = ["json"]
+
+[outputFormats]
+  [outputFormats.Version]
+    mediaType = "application/json"
+    baseName = "version"
+    isPlainText = true
+
+[outputs]
+  home = ["HTML", "Version"]
+
 [minify]
   minifyOutput = true
 
@@ -59,5 +72,5 @@ enableRobotsTXT = true
   [[server.headers]]
     for = "/admin/**"
     [server.headers.values]
-      Content-Security-Policy = "default-src 'self'; frame-src 'self' https://identity.netlify.com; frame-ancestors 'self' https://identity.netlify.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://identity.netlify.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' http://localhost:8081/api/v1 https://unpkg.com https://api.github.com https://identity.netlify.com https://www.netlifystatus.com;"
+      Content-Security-Policy = "default-src 'self'; frame-src 'self' https://identity.netlify.com; frame-ancestors 'self' https://identity.netlify.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://identity.netlify.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' blob: http://localhost:8081/api/v1 https://unpkg.com https://api.github.com https://identity.netlify.com https://www.netlifystatus.com;"
       X-Frame-Options = "SAMEORIGIN"

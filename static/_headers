@@ -10,5 +10,5 @@
   Cross-Origin-Opener-Policy: same-origin
   Cross-Origin-Embedder-Policy: unsafe-none
 /admin/**
-  Content-Security-Policy: default-src 'self'; frame-src 'self' https://identity.netlify.com; frame-ancestors 'self' https://identity.netlify.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://identity.netlify.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' https://unpkg.com https://api.github.com https://identity.netlify.com https://www.netlifystatus.com;
+  Content-Security-Policy: default-src 'self'; frame-src 'self' https://identity.netlify.com; frame-ancestors 'self' https://identity.netlify.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://identity.netlify.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' blob: https://unpkg.com https://api.github.com https://identity.netlify.com https://www.netlifystatus.com;
   X-Frame-Options: SAMEORIGIN
