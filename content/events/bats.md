@@ -1,9 +1,9 @@
 ---
-title: Bats
+title: The Amazing World of Bats
 date: 2026-02-28T01:00:00.000+00:00
-event_date: 2026-02-26T10:37:00.000+00:00
+event_date: 2026-02-26T10:55:00.000+00:00
 draft: false
-description: Talk on Bats at Fearon Hall
+description: The Amazing World of Bats
 ---
 
 
