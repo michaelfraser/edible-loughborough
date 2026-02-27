@@ -36,3 +36,6 @@ start-all: ## Start both Hugo server and Decap CMS
 
 update-headers: ## A script to update the _headers file
 	@go run bin/update_headers.go
+
+lighthouse: ## A script to run google lighthouse on multiple web pages
+	@go run bin/lighthouse.go
