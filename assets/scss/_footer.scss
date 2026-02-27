@@ -30,15 +30,24 @@ footer {
     color: $primary-color;
   }
 
-  p.copyright {
-    margin-bottom: 0.5em;
+  p {
+    margin-bottom: 0em;
     text-align: center;
+    
+    &:last-of-type {
+      margin-bottom: 0.5em;
+    }
 
     @media screen and (max-width: $sm) {
       width: 80%;
       text-align: left;
       padding-left: 0.5em;
     }
+  }
+
+  .heart {
+    color: #b13126;
+    font-size: 2rem;
   }
 
   &::before {
