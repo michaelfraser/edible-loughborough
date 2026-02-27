@@ -15,10 +15,13 @@ This website manages our garden locations, volunteer news, events and educationa
 
 ## 🛠 Tech Stack & Pre-requisites
 The site has been tested and developed with the following versions:
-* **Hugo (Extended):** `0.128.0`
-* **Node.js:** `25.2.1`
-* **Netlify CLI:** `23.13.0`
 * **OS:** Ubuntu `24.04 (LTS)`
+* **Go:** `1.22.2`
+* **Node.js:** `25.2.1`
+* **Hugo (Extended):** `0.128.0`
+* **Netlify CLI:** `23.13.0`
+* **Lighthouse:** `13.0.3`
+
 
 ## 🤝 Contributing
 
@@ -31,4 +34,4 @@ Issues:  If you spot a bug or a broken link.  Feel free to open a GitHub [issue]
 ---
 ## 🌱  If you eat, you’re in! 🌱
 
-*Last reviewed: 06/02/2026*
+*Last reviewed: 27/02/2026*
