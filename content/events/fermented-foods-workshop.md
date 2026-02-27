@@ -7,4 +7,4 @@ description: Fermented Foods
 ---
 ### Fermented Foods Workshop by members of IEL
 
-Included looking at how to make milk Kefir and ferment sweetened black tea with a SCOBY (Symbiotic Culture of Bacteria and Yeast) to make kombucha
+Included looking at how to make milk Kefir and ferment sweetened black tea with a SCOBY (Symbiotic Culture of Bacteria and Yeast) to make kombucha.
