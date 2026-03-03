@@ -151,8 +151,8 @@ main {
     flex: 1 0 auto;
     position: relative;
     z-index: 1005;
-    margin-top: 3rem;
-    margin-bottom: 10rem;
+    margin-top: 0rem;
+    margin-bottom: 15rem;
     width: 100%;
 }
 
@@ -228,8 +228,8 @@ path {
 }
 
 .hero-content {
-    margin-top: 6rem;
-    margin-bottom: 50vh;
+    margin-top: 4rem;
+    margin-bottom: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -271,8 +271,9 @@ path {
         height: 80px;
     }
 
-    main {
-        // margin-bottom: 4rem;
+    .hero-content {
+        margin-top: 10rem;
+        margin-bottom: 50vh;
     }
 }
 
