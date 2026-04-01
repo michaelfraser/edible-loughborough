@@ -5,6 +5,15 @@ disableKinds = ['taxonomy', 'term']
 ignoreLogs = ['warning-goldmark-raw-html']
 enableRobotsTXT = true
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [mediaTypes]
   [mediaTypes."application/json"]
     suffixes = ["json"]
@@ -34,10 +43,6 @@ enableRobotsTXT = true
 [permalinks]
   pages = "/:slug/"
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true # Often needed for Bootstrap components in Markdown
 
 [build]
   writeStats = true # Generates hugo_stats.json (required if you use PurgeCSS later)
