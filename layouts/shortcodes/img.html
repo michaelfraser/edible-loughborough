@@ -3,16 +3,23 @@
 {{ $img := resources.Get $src }}
 
 {{ if $img }}
-  {{/* Resize and convert to WebP for better performance */}}
-  {{ $processed := $img.Resize (printf "%s webp" $w) }}
-  <figure>
-    <img src="{{ $processed.RelPermalink }}" 
-         width="{{ $processed.Width }}" 
-         height="{{ $processed.Height }}" 
-         alt="{{ .Get "alt" }}"
-         loading="lazy">
-    {{ with .Get "caption" }}<figcaption>{{ . }}</figcaption>{{ end }}
-  </figure>
+  {{ if eq $img.MediaType.SubType "svg" }}
+    {{/* SVGs cannot be resized, so we output the original */}}
+    <img src="{{ $img.RelPermalink }}" alt="{{ .Get "alt" }}">
+  {{ else }}
+    {{/* Resize and { if eq $img.MediaType.SubType "svg" }}
+    {{/* SVGs cannot be resized, so we output the original */}}
+    <img src="{{ $img.RelPermalink }}" alt="{{ .Get "alt" }}"> to WebP for better performance */}}
+    {{ $processed := $img.Resize (printf "%s webp" $w) }}
+    <figure>
+      <img src="{{ $processed.RelPermalink }}" 
+          width="{{ $processed.Width }}" 
+          height="{{ $processed.Height }}" 
+          alt="{{ .Get "alt" }}"
+          loading="lazy">
+      {{ with .Get "caption" }}<figcaption>{{ . }}</figcaption>{{ end }}
+    </figure>
+  {{ end }}
 {{ else }}
   <p style="font-family: monospace; color: white; background: red; padding: 10px;">
     <strong>Hugo Pipes Error:</strong> Image not found at <code>assets/{{ $src }}</code>
