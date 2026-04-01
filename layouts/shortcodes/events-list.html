@@ -1,5 +1,6 @@
 {{ $events := where site.RegularPages "Section" "events" }}
 {{ $now := now }}
+{{ $upcomingEvent = false }}
 
 <div class="row justify-content-center">
     <div class="col-12 col-md-10 col-lg-12">
@@ -9,6 +10,7 @@
         {{ range sort $events "Params.event_date" "desc" }}
             {{ $eventDate := time .Params.event_date }}
             {{ if ge $eventDate $now }}
+                {{ $upcomingEvent = true }}
                 {{ $day := $eventDate.Day }}
                 {{ $suffix := "th" }}
                 {{ if eq $day 1 21 31 }}{{ $suffix = "st" }}
@@ -21,6 +23,9 @@
                     <strong><a href="{{ .RelPermalink }}">{{ .Title }}</a></strong>
                 </li>
             {{ end }}    
+        {{ end }}
+        {{ if not $upcomingEvent }}
+            <li class="mb-2"><strong>Coming soon!</strong></li>  
         {{ end }}
         </ul>
 
