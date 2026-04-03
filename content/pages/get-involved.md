@@ -3,7 +3,9 @@ title: Get Involved
 slug: get-involved
 layout: single
 date: 2025-12-12
-description: Want to get involved with Incredible Edible Loughborough? Discover volunteer roles, gardening sessions, and community projects focused on local food and sustainability.
+description: Want to get involved with Incredible Edible Loughborough? Discover
+  volunteer roles, gardening sessions, and community projects focused on local
+  food and sustainability.
 draft: false
 ---
 # Get Involved
@@ -12,6 +14,7 @@ draft: false
 
 Want to help out? **[See where we’re gardening this week](/garden-times/)** — our sessions are drop-in and open to everyone.
 
+{{<img src="images/gisela.jpg" alt="Working together" width="800x" >}}
 
 ## Our food system is broken and unfair. You can become a change maker.
 
@@ -19,11 +22,17 @@ Are you bothered by how much pesticide you might be eating in your daily fruit a
 
 ## We don’t have to put up with this.
 
-Together we can make change.  We can become self reliant.  We can make food local, healthy and cheap by getting together and growing it here, where we are, on our doorsteps, on unused, neglected spaces.  And we don’t have to wait three years for an allotment, there is plenty of spare land in the town.  Ordinary people acting together can create radical change.  
+Together we can make change.  We can become self reliant.  We can make food local, healthy and cheap by getting together and growing it here, where we are, on our doorsteps, on unused, neglected spaces.  And we don’t have to wait three years for an allotment, there is plenty of spare land in the town.  Ordinary people acting together can create radical change. 
+
+{{<img src="images/celebrating.jpg" alt="Together we can make change" width="800x" >}}
+
+ 
 
 ## Join our gardening sessions
 
 Anyone can join us and learn to grow organic, healthy fruit and vegetables.  Starting in March in our greenhouse at Fearon Hall, we teach how to sow seeds for summer and autumn crops and plant them out in our Incredible gardens for the community.  We give hands on experience of maintaining the crops right through to harvest. What’s more you’ll have fun making friends and working with others to produce healthy food available to all.  Join us by emailing ediblelboro@gmail.com and become a change maker today.
+
+{{<img src="images/greenhouse.jpg" alt="Join in and learn to grow food" width="800x" >}}
 
 ## Not too keen on the gardening? There are other ways of supporting us:
 
