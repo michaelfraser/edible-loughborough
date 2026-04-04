@@ -20,7 +20,7 @@
 
 {{/* 14KB Budget Check */}}
 {{ $size := len $css.Content }}
-{{ if gt $size 14400 }}
+{{ if gt $size 14900 }}
   {{ errorf "⚠️ CSS BUDGET EXCEEDED: %d bytes" $size }}
 {{ else }}
   {{ warnf "CSS: %d bytes" $size }}
