@@ -27,15 +27,3 @@ draft: false
 [Safeguarding Policy](https://drive.google.com/file/d/1PHVCAQPCZ9oTplkiBnYyc9z2eZAy-m0L/view?usp=sharing)
 
 [Health and Safety Policy](https://drive.google.com/file/d/1XjgHsaexI4DohyvTFMdO2HeLz4NPpXQ7/view?usp=sharing)
-
-
-
-{{<img src="" alt="IEL Constitution" width="" >}}
-
-{{<img src="" alt="Risk Assessment" width="800x" >}}
-
-{{<img src="" alt="Health and Safety" width="800x" >}}
-
-{{<img src="" alt="Equality and Diversity" width="800x" >}}
-
-{{<img src="" alt="Financial Report 2026" width="800x" >}}
