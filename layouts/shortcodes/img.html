@@ -4,12 +4,8 @@
 
 {{ if $img }}
   {{ if eq $img.MediaType.SubType "svg" }}
-    {{/* SVGs cannot be resized, so we output the original */}}
     <img src="{{ $img.RelPermalink }}" alt="{{ .Get "alt" }}">
   {{ else }}
-    {{/* Resize and { if eq $img.MediaType.SubType "svg" }}
-    {{/* SVGs cannot be resized, so we output the original */}}
-    <img src="{{ $img.RelPermalink }}" alt="{{ .Get "alt" }}"> to WebP for better performance */}}
     {{ $processed := $img.Resize (printf "%s webp" $w) }}
     <figure>
       <img src="{{ $processed.RelPermalink }}" 
