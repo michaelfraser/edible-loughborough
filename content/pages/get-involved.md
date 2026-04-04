@@ -14,7 +14,7 @@ draft: false
 
 Want to help out? **[See where we’re gardening this week](/garden-times/)** — our sessions are drop-in and open to everyone.
 
-{{<img src="images/gisela-people.jpg" alt="Working together" width="800x" >}}
+{{<img src="images/gisela-people.jpg" alt="Working together" width="300x" >}}
 
 ## Our food system is broken and unfair. You can become a change maker.
 
