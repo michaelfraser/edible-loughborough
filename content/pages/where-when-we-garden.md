@@ -14,7 +14,7 @@ Come and garden with us. Join us at our different [gardens ](/our-gardens/)throu
 
 ## From March 2026
 
-### Monday 16 &  23 March 5pm - 6pm
+### Mondays 5pm - 7pm
 
 * Thorpe Acre Road 
 * Warwick Way Flats
