@@ -30,7 +30,7 @@ Together we can make change.  We can become self reliant.  We can make food loca
 
 Anyone can join us and learn to grow organic, healthy fruit and vegetables.  Starting in March in our greenhouse at Fearon Hall, we teach how to sow seeds for summer and autumn crops and plant them out in our Incredible gardens for the community.  We give hands on experience of maintaining the crops right through to harvest. What’s more you’ll have fun making friends and working with others to produce healthy food available to all.  Join us by emailing ediblelboro@gmail.com and become a change maker today.
 
-{{<img src="images/greenhouse-small.jpg" alt="Join in and learn to grow food" width="800x" >}}
+{{<img src="images/greenhouse-small.jpg" alt="Join in and learn to grow food" width="300x" >}}
 
 ## Not too keen on the gardening? There are other ways of supporting us:
 
