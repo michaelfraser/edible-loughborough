@@ -31,7 +31,7 @@ Come and garden with us. Join us at our different [gardens ](/our-gardens/)throu
 
 * King George Road Allotment or gardens around Fearon Hall
 
-{{<img src="images/ielstamp.jpg" alt="undefined" width="200x" >}}
+{{<img src="images/ielstamp.jpg" alt="undefined" width="300x" >}}
 
 #### Do I need experience?
 
