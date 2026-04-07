@@ -10,7 +10,9 @@ draft: false
 ---
 # Where & When We Garden
 
-Come and garden with us. Join us at our different [gardens ](/our-gardens/)throughout the week. Everyone welcome — whether you stay 20 minutes or more, want to just chat, maybe see what we're doing or have any questions. **[See here where we are.](/our-gardens/)**
+Come and garden with us. Join us at our different [gardens ](/our-gardens/)throughout the week. Everyone welcome — whether you stay 20 minutes or more, want to just chat, maybe see what we're doing or have any questions. 
+
+**[See here where we are.](/our-gardens/)**
 
 ## From March 2026
 
