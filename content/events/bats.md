@@ -7,4 +7,4 @@ description: The Amazing World of Bats
 ---
 [Get in touch to learn more or book your spot.](https://edibleloughborough.org.uk/contact-us/)
 
-{{<img src="images/world_of_bats.jpg" alt="Amazing World of Bats" width="800x" >}}
+{{<img src="images/world_of_bats.jpg" alt="Amazing World of Bats" width="800px" >}}
