@@ -35,7 +35,7 @@ Come and garden with us. Join us at our different [gardens ](/our-gardens/)throu
 
 {{<img src="images/questions.jpg" alt="questions" width="300px" >}}
 
-* #### Do I need experience?
+#### Do I need experience?
 
 Nope! All skill levels are welcome.
 
