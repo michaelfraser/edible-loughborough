@@ -1,23 +1,27 @@
 {{ $src := .Get "src" | strings.TrimPrefix "/" }}
-{{ $w := .Get "width" | default "800x" }}
+{{ $width := .Get "width" | default "800px" }}
+{{ $alt := .Get "alt" | default (.Get "title" | default "") }}
+{{ $title := .Get "title" | default "" }}
 {{ $img := resources.Get $src }}
 
 {{ if $img }}
   {{ if eq $img.MediaType.SubType "svg" }}
-    <img src="{{ $img.RelPermalink }}" alt="{{ .Get "alt" }}">
+    <img src="{{ $img.RelPermalink }}" alt="{{ $alt }}">
   {{ else }}
-    {{ $processed := $img.Resize (printf "%s webp" $w) }}
-    <figure>
-      <img src="{{ $processed.RelPermalink }}" 
-          width="{{ $processed.Width }}" 
-          height="{{ $processed.Height }}" 
-          alt="{{ .Get "alt" }}"
-          loading="lazy">
-      {{ with .Get "caption" }}<figcaption>{{ . }}</figcaption>{{ end }}
-    </figure>
+    {{- 
+            $params := dict 
+            "path" $src
+            "alt" $alt
+            "title" $title
+            "class" "img-fluid w-100" 
+            "width" $width 
+    -}}
+    {{ partial "optimize-image.html" $params }}    
   {{ end }}
 {{ else }}
+  {{ if .Site.IsServer }}
   <p style="font-family: monospace; color: white; background: red; padding: 10px;">
     <strong>Hugo Pipes Error:</strong> Image not found at <code>assets/{{ $src }}</code>
   </p>
+  {{ end }}  
 {{ end }}
