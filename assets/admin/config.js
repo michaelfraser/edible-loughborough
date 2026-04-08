@@ -11,7 +11,7 @@ window.CMS.registerEditorComponent({
   fields: [
     { name: "src", label: "Image", widget: "image" },
     { name: "alt", label: "Alt Text", widget: "string" },
-    { name: "width", label: "Width (e.g. 600x)", widget: "string", default: "800x" }
+    { name: "width", label: "Width (e.g. 600px)", widget: "string", default: "800px" }
   ],
 
   // Pattern uses backticks + escaped brackets
