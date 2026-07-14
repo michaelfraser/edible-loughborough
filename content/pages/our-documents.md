@@ -12,7 +12,7 @@ draft: false
 
 [Complaints and Disputes Policy](https://drive.google.com/file/d/1u2CgyNdUnISBz2pBYGTBddUgl5F-2qj2/view?usp=sharing)
 
-[Equality and Diversity Policy](https://drive.google.com/file/d/1f-Nhv27MI7xwGfmcf8tndJDvAIfgp4qF/view?usp=sharing)
+[Equality and Diversity Policy](https://drive.google.com/file/d/1tzGVVSHYlT_kawqJ0H3PNO40e-EGABhe/view?usp=sharing)
 
 [Financial Report 2024](https://drive.google.com/file/d/1g_fLZB2nOwK8y3TS3ntHIBKOEgnqQFCk/view?usp=sharing)
 
