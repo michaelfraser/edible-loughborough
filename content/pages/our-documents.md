@@ -24,6 +24,6 @@ draft: false
 
 [Privacy policy](https://drive.google.com/file/d/1F5AuWs3De4gowKp57b7ieccLXZQBGVP9/view?usp=sharing)
 
-[Safeguarding Policy](https://drive.google.com/file/d/1PHVCAQPCZ9oTplkiBnYyc9z2eZAy-m0L/view?usp=sharing)
+[Safeguarding Policy 2026](https://drive.google.com/file/d/1fVDubGEdKmQxRD7FIwez59PHbf3IZi6L/view?usp=drive_link)
 
-[Health and Safety Policy](https://drive.google.com/file/d/1XjgHsaexI4DohyvTFMdO2HeLz4NPpXQ7/view?usp=sharing)
+[Health and Safety Policy 2026](https://drive.google.com/file/d/1kEiUFzoFVmecS80vd0w0cec2ASjsHBcC/view?usp=drive_link)
