@@ -2,7 +2,8 @@
 title: Teaching
 slug: teaching
 layout: single
-date: 2026-08-03T14:34:00.000+01:00
+date: 2026-08-03
+description: "From seed sowing to harvesting, discover how citizens of all ages came together at Fearon Hall to learn food-growing basics, foster biodiversity, and strengthen local food resilience in our 2026 Beginners Course."
 draft: false
 ---
 # Teaching
