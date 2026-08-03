@@ -2,7 +2,7 @@
 title: Teaching
 slug: teaching
 layout: single
-date: 2026-08-03T14:09:00.000+01:00
+date: 2026-08-03T14:34:00.000+01:00
 draft: false
 ---
 # Teaching
