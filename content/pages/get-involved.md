@@ -16,6 +16,12 @@ Want to help out? **[See where we’re gardening this week](/garden-times/)** �
 
 {{<img src="images/gisela-people.jpg" alt="Working together" width="350px" >}}
 
+## Teaching
+
+IEL is not just about growing food for the community. It is about creating communities which can grow their own food and look after themselves. Take a look at what happens on our [Beginners Course](/teaching/). 
+
+We believe that food resilience needs to be built now, urgently, as a sensible response to the coming polycrisis of climate change and wildlife loss. So far successive governments have been woefully lacking in taking this seriously, so it is time for citizens to do it themselves.
+
 ## Our food system is broken and unfair. You can become a change maker.
 
 Are you bothered by how much pesticide you might be eating in your daily fruit and veg?  Does it bother you that food we used to grow right here is now imported hundreds of miles, ramping up the floods and fires caused by climate change?  Healthy food is unaffordable while supermarkets make vast profits from promotions and price cuts on junk food.  Over 10% of the population can’t afford to eat properly and bad food is making us a sick nation.  
