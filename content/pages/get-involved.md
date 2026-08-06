@@ -18,9 +18,9 @@ Want to help out? **[See where weâ€™re gardening this week](/garden-times/)** â€
 
 ## Teaching
 
-IEL is not just about growing food for the community. It is about creating communities which can grow their own food and look after themselves. Take a look at what happens on our [Beginners Course](/teaching/). 
+IEL is not just about growing food for the community. It is about creating communities which can grow their own food and look after themselves. 
 
-We believe that food resilience needs to be built now, urgently, as a sensible response to the coming polycrisis of climate change and wildlife loss. So far successive governments have been woefully lacking in taking this seriously, so it is time for citizens to do it themselves.
+Take a look at what happens on our [Beginners Course](/teaching/). 
 
 ## Our food system is broken and unfair. You can become a change maker.
 
