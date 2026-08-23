@@ -15,7 +15,7 @@ draft: false
 
 Incredible Edible grows food in urban settings, open to the public.  The organisation started in 2008 and in Loughborough we started in 2022. We now have seven gardens growing fruit and veg throughout the year.  Unlike other community gardens they are always open to walk in and help yourself to free food. 
 
-Listen here to our episode of 
+[Listen here](https://www.incredibleedible.org.uk/news/im-working-for-a-revolution/) to our episode of 
 
 {{<img src="images/podcast-news-header.png" alt="The Power of small actions podcast" width="800px" >}}
 
