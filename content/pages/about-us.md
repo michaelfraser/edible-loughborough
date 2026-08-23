@@ -9,7 +9,7 @@ draft: false
 ---
 # About us
 
-{{<img src="https://youtu.be/3aVU7aID2aM?is=bKlYu1KD9d82Hoh4" alt="YouTube video" width="800px" >}}
+{{<img src="images/youtube-video1.jpg" alt="YouTube video" width="800px" >}}
 
 
 
