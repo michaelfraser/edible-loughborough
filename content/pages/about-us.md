@@ -9,11 +9,9 @@ draft: false
 ---
 # About us
 
-```
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3aVU7aID2aM" title="Reshaping urban landscape one plant at a time" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-```
+[See what we're doing here](https://www.youtube.com/watch?v=3aVU7aID2aM)
 
-See what we're doing here
+{{<img src="images/youtube-1.jpg" alt="YouTube video 1" width="800px" >}}
 
 Discover the inspiring story of Incredible Edible Loughborough, a community-driven initiative dedicated to food sustainability and local resilience. Led by our founding members and volunteers to transform our local environment. From establishing community gardens and partnering with educational institutions to leading vital discussions on environmental stewardship, we show how a pragmatic approach to social change can make a real difference.
 
