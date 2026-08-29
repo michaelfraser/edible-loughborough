@@ -30,12 +30,15 @@ start-hugo: ## Start Hugo server
 start-cms: ## Start Decap CMS
 	npx decap-server
 
-start-all: ## Start both Hugo server and Decap CMS
+start-all: requirements-check ## Start both Hugo server and Decap CMS
 	@echo "Starting Hugo server and Decap CMS..."
 	@$(MAKE) -j2 start-hugo start-cms	
 
 update-headers: ## A script to update the _headers file
-	@go run bin/update_headers.go
+	@go run ./bin/update_headers
+
+requirements-check: ## A script to check for requirements
+	@go run ./bin/requirements_check
 
 lighthouse: ## A script to run google lighthouse on multiple web pages
-	@go run bin/lighthouse.go
+	@go run ./bin/lighthouse
