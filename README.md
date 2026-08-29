@@ -19,7 +19,7 @@ The site has been tested and developed with the following versions:
 * **Go:** `1.26.0`
 * **Node.js:** `25.2.1`
 * **Hugo (Extended):** `0.128.0`
-* **Netlify CLI:** `23.13.0`
+* **Netlify CLI:** `27.4.1`
 * **Lighthouse:** `13.0.3`
 
 
@@ -34,4 +34,4 @@ Issues:  If you spot a bug or a broken link.  Feel free to open a GitHub [issue]
 ---
 ## 🌱  If you eat, you’re in! 🌱
 
-*Last reviewed: 27/02/2026*
+*Last reviewed: 29/08/2026*
