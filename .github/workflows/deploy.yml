@@ -33,7 +33,7 @@ jobs:
           cp netlify.toml public/
 
       - name: Deploy Staging to Netlify
-        uses: nwtgck/actions-netlify@v3
+        uses: nwtgck/actions-netlify@v4
         with:
           publish-dir: './public'
           production-deploy: false
