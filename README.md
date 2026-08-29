@@ -16,7 +16,7 @@ This website manages our garden locations, volunteer news, events and educationa
 ## 🛠 Tech Stack & Pre-requisites
 The site has been tested and developed with the following versions:
 * **OS:** Ubuntu `24.04 (LTS)`
-* **Go:** `1.22.2`
+* **Go:** `1.26.0`
 * **Node.js:** `25.2.1`
 * **Hugo (Extended):** `0.128.0`
 * **Netlify CLI:** `23.13.0`
