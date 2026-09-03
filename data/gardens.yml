@@ -26,18 +26,16 @@ gardens:
     lat: 52.776984
     lng: -1.206465
     map_title: Corner Garden, Cambridge Street
-  - name: 24 Limehurst Avenue
-    description: The front garden of **24 Limehurst Avenue** is an IEL garden and
-      plenty of neighbours go there to pick.  Just imagine if every other front
-      garden in Loughborough were the same.  How green and joyful a town this
-      would be.  Instead, more and more people are paving over their front
-      gardens.  Where is the wildlife supposed to live?  Let’s share our town
-      with other living creatures.
-    image: /images/gardens/limehurst-avenue.jpg
-    google_map_url: https://maps.app.goo.gl/jo5dMXudKdojzKM26
-    lat: 52.775761
-    lng: -1.210581
-    map_title: 24 Limehurst Avenue
+  - name: King George Road Allotment
+    description: The **IEL Allotment** is off King George Road near Paget Pastures.
+      This is a space for the more confident food growers among us to practice
+      their skills. Most of the food produced goes to food banks, and there is
+      plenty of it. It’s a lovely place for our summer parties as well.
+    image: images/gardens/allotment.jpg
+    google_map_url: https://maps.app.goo.gl/Eqsr2Ufa5Bp8ZLQi8
+    lat: 52
+    lng: -1
+    map_title: King George Rd Allotment
   - name: Knightthorpe Methodist Church
     description: The IEL garden in front of Knightthorpe Methodist Church has to be
       seen.  A lovely spot but also amazingly productive of healthy organic
@@ -67,13 +65,3 @@ gardens:
     lat: 52.776742
     lng: -1.235281
     map_title: Thorpe Acre Road
-  - name: King George Road Allotment
-    description: The **IEL Allotment** is off King George Road near Paget Pastures.
-      This is a space for the more confident food growers among us to practice
-      their skills. Most of the food produced goes to food banks, and there is
-      plenty of it. It’s a lovely place for our summer parties as well.
-    image: images/gardens/allotment.jpg
-    google_map_url: https://maps.app.goo.gl/Eqsr2Ufa5Bp8ZLQi8
-    lat: 52.76527
-    lng: -1.19147
-    map_title: King George Road Allotment
