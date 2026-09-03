@@ -19,7 +19,7 @@ Discover the inspiring story of Incredible Edible Loughborough, a community-driv
 
 The organisation started in 2008 and in Loughborough we started in 2022. We now have six gardens growing fruit and veg throughout the year.  Unlike other community gardens they are always open to walk in and help yourself to free food. 
 
- Go to this link to hear the
+ Go to this link to hear 
 
 #### [IEL podcast interview](https://www.incredibleedible.org.uk/news/im-working-for-a-revolution/) 
 
