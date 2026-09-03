@@ -9,7 +9,9 @@ draft: false
 ---
 # About us
 
-[See what we're doing here](https://www.youtube.com/watch?v=3aVU7aID2aM)
+Go to this link to see what we're doing in Loughborough
+
+#### [IEL on YouTube](https://www.youtube.com/watch?v=3aVU7aID2aM)
 
 {{<img src="images/youtube-1.jpg" alt="YouTube video 1" width="800px" >}}
 
@@ -17,7 +19,9 @@ Discover the inspiring story of Incredible Edible Loughborough, a community-driv
 
 The organisation started in 2008 and in Loughborough we started in 2022. We now have six gardens growing fruit and veg throughout the year.  Unlike other community gardens they are always open to walk in and help yourself to free food. 
 
-[Listen here](https://www.incredibleedible.org.uk/news/im-working-for-a-revolution/) to our episode of 
+ Go to this link to hear the
+
+#### [IEL podcast interview](https://www.incredibleedible.org.uk/news/im-working-for-a-revolution/) 
 
 {{<img src="images/podcast-news-header.png" alt="The Power of small actions podcast" width="800px" >}}
 
