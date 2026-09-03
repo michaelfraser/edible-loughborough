@@ -15,7 +15,7 @@ draft: false
 
 Discover the inspiring story of Incredible Edible Loughborough, a community-driven initiative dedicated to food sustainability and local resilience. Led by our founding members and volunteers to transform our local environment. From establishing community gardens and partnering with educational institutions to leading vital discussions on environmental stewardship, we show how a pragmatic approach to social change can make a real difference.
 
-The organisation started in 2008 and in Loughborough we started in 2022. We now have seven gardens growing fruit and veg throughout the year.  Unlike other community gardens they are always open to walk in and help yourself to free food. 
+The organisation started in 2008 and in Loughborough we started in 2022. We now have six gardens growing fruit and veg throughout the year.  Unlike other community gardens they are always open to walk in and help yourself to free food. 
 
 [Listen here](https://www.incredibleedible.org.uk/news/im-working-for-a-revolution/) to our episode of 
 
