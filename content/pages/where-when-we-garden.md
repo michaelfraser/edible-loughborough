@@ -14,24 +14,18 @@ Come and garden with us. Join us at our different [gardens ](/our-gardens/)throu
 
 **[See here where we are.](/our-gardens/)**
 
-## From March 2026
+## From October 2026
 
-### Mondays 5pm - 7pm
+### Wednesdays 1.30pm - 3.30pm
 
-* Thorpe Acre Road 
-* Warwick Way Flats
-
-### Wednesdays 2pm - 4pm
-
-* Knightthorpe Methodist Church
-
-### Wednesdays 5pm - 7pm 
-
-* King George Road Allotment
+* **Knightthorpe Methodist Church**
 
 ### Saturdays 10am - 12am
 
-* King George Road Allotment or gardens around Fearon Hall
+* **Great Central Road** Allotment or 
+* **Fearon Hall** and **Corner** gardens
+
+### No gardening after November 28th
 
 {{<img src="images/questions.jpg" alt="questions" width="300px" >}}
 
