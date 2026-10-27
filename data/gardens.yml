@@ -70,3 +70,16 @@ gardens:
     lat: 52.776742
     lng: -1.235281
     map_title: Thorpe Acre Road
+  - name: Great Central Road Allotment
+    description: This **IEL Great Central Allotment** is found on Great Central Road
+      near the Great Central Railway Station. This is a space for the more
+      confident food growers among us to practice their skills. We moved onto
+      our growing space in September 2026. Getting the land renewed with compost
+      and established for the next growing season. It's a wonderful space to
+      meet the surrounding allotment growers who have produce to boast of and
+      gardening experiences to share.
+    image: images/gardens/whatsapp-image-2026-10-24-at-13.02.41-1-.jpeg
+    google_map_url: https://maps.app.goo.gl/mmMv9Edrpn9YPSJs7
+    lat: 52
+    lng: -1
+    map_title: Allotments
