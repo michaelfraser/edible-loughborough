@@ -18,10 +18,10 @@ build-hugo:
 	HUGO_PARAMS_ignoresmallcsscheck=$(SKIP_CHECK) \
 	hugo --gc --minify --environment $(ENV)
 
-netlify-staging: build-staging ## Build and deploy to Netlify Staging environment
+netlify-staging: requirements-check build-staging ## Build and deploy to Netlify Staging environment
 	npx netlify-cli deploy --alias=staging --dir=public --message="Staging deploy"
 
-netlify: build-production ## Build and deploy to Netlify
+netlify: requirements-check build-production ## Build and deploy to Netlify
 	npx netlify-cli deploy --prod --dir=public --message="Production deploy"
 
 start-hugo: ## Start Hugo server
