@@ -7,3 +7,5 @@ description: Climate Change in our Gardens by Rob Wilby from Loughborough Univer
 ---
 Looking at 
 Climate Change in our Gardens by Rob Wilby from Loughborough University
+
+{{<img src="images/ielstamp.jpg" alt="" width="800px" >}}
