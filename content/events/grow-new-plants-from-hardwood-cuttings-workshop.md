@@ -9,11 +9,11 @@ description: Grow new plants from hardwood cuttings workshop
 
 ### Growing new plants from hardwood stems
 
-📆 Saturday, 16th January2027
+##### 📆 Saturday, 16th January2027
 
-⌚ 10am – 12pm
+##### ⌚ 10am – 12pm
 
-📍 **Fearon Hall (Rectory Road, Loughborough,  LE11 1PL)**
+##### 📍 Fearon Hall, Rectory Road, Loughborough, LE11 1PL 
 
 Winter is the best time to make new plants from the ones you already know. Between November and February/March, plants are dormant, and a simple stem cutting can grow into a whole new plant. 
 
