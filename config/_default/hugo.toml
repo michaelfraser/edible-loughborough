@@ -4,6 +4,7 @@ title = 'Incredible Edible Loughborough'
 disableKinds = ['taxonomy', 'term']
 ignoreLogs = ['warning-goldmark-raw-html']
 enableRobotsTXT = true
+buildFuture = true
 
 [markup]
   [markup.goldmark]
