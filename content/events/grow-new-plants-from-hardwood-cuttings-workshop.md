@@ -1,6 +1,7 @@
 ---
 title: Grow new plants from hardwood cuttings workshop
 date: 2027-01-16T10:00:00.000+00:00
+event_date: 2027-01-16T10:00:00.000+00:00
 draft: false
 description: Grow new plants from hardwood cuttings workshop
 ---
