@@ -23,10 +23,10 @@ Would you like your garden to be teeming with frogs, toads, hedgehogs, bees and 
 
 Kate's talk will be followed by a Q&A session and a chance to buy her latest book and get it signed by the author. 
 
-**Tickets: £12 / £9 concessions** 
+##### **Tickets: £12 / £9 concessions** 
 
 **Advance Booking Essential** 
 
-[Book here](https://www.zeffy.com/en-GB/ticketing/how-to-connect-your-garden-to-the-wider-landscape-and-why-you-should-with-kate-bradbury)
+##### [Book here](https://www.zeffy.com/en-GB/ticketing/how-to-connect-your-garden-to-the-wider-landscape-and-why-you-should-with-kate-bradbury)
 
 {{<img src="images/imagekb_nologo_whiteback.png" alt="Kate_bradbury_talk_2027" width="800px" >}}
