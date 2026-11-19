@@ -41,7 +41,7 @@ func main() {
 		{
 			Name:      "go",
 			Args:      []string{"version"},
-			Version:   "v1.26.0",
+			Version:   "v1.26.8",
 			CheckType: CheckExact,
 		},
 		{
