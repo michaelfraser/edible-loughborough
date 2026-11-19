@@ -11,19 +11,17 @@ description: Kate Bradbury Talk | How to Connect your Garden to the Wider
 
 ### **How to Connect your Garden to the Wider Landscape & Why you Should**
 
-**Saturday, 13th February 2027** 
+##### **Saturday, 13th February 2027** 
 
-**2pm, Fearon Hall** 
+##### **2pm**
+
+##### **Fearon Hall, Rectory Road, Loughborough, LE11 1PL** 
 
 Award-winning garden writer, broadcaster and wildlife specialist, Kate Bradbury will share her passion for wildlife gardening and will look at ways to create a wildlife oasis in your own garden. 
 
 Would you like your garden to be teeming with frogs, toads, hedgehogs, bees and birds?  Come and find out how to make it happen. 
 
 Kate's talk will be followed by a Q&A session and a chance to buy her latest book and get it signed by the author. 
-
-**TalkTime: 2.00 pm** 
-
-**Address: Fearon Hall, Rectory Road, Loughborough, LE11 1PL** 
 
 **Tickets: £12 / £9 concessions** 
 
