@@ -7,6 +7,10 @@ draft: false
 description: Kate Bradbury Talk | How to Connect your Garden to the Wider
   Landscape & Why you Should
 ---
+## **Kate Bradbury Talk**
+
+### **How to Connect your Garden to the Wider Landscape & Why you Should**
+
 **Saturday, 13th February 2027** 
 
 **2pm, Fearon Hall** 
