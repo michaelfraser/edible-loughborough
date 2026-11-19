@@ -13,9 +13,9 @@ description: Kate Bradbury Talk | How to Connect your Garden to the Wider
 
 Award-winning garden writer, broadcaster and wildlife specialist, Kate Bradbury will share her passion for wildlife gardening and will look at ways to create a wildlife oasis in your own garden. 
 
-Would you like your garden to be teeming with frogs, toads, hedgehogs, bees andbirds?  Come and find out how to make it happen. 
+Would you like your garden to be teeming with frogs, toads, hedgehogs, bees and birds?  Come and find out how to make it happen. 
 
-Kate's talk will be followed by a Q&A session and a chance to buy her latest book andget it signed by the author. 
+Kate's talk will be followed by a Q&A session and a chance to buy her latest book and get it signed by the author. 
 
 **TalkTime: 2.00 pm** 
 
