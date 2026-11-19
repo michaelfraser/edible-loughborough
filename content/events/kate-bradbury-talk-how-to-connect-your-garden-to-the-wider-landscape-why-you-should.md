@@ -29,4 +29,4 @@ Kate's talk will be followed by a Q&A session and a chance to buy her latest boo
 
 ##### [Book here](https://www.zeffy.com/en-GB/ticketing/how-to-connect-your-garden-to-the-wider-landscape-and-why-you-should-with-kate-bradbury)
 
-{{<img src="images/kate_bradbury3.jpg" alt="Kate_bradbury_talk_2027" width="800px" >}}
+{{<img src="images/kate_bradbury4.jpg" alt="Kate_bradbury_talk_2027" width="800px" >}}
